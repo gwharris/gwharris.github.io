@@ -43,54 +43,18 @@ The basic structure of this website is adapted from w3schools.com -->
       <h3 class="typewrite" style="padding: 20px" data-period="2000" data-type='["driven.", "enthusiastic.", "passionate.", "tech-focused.", "diligent."]'>
         <span class="wrap"></span></h3>
       </div>
-    </section>
+  </section>
 
-  <!-- Navigation bar -->
-  <div class="navbar">
-    
-    <div class="dropdown">
-      <a class="one" href="#" target="_blank">Resumes</a>
-      <div class="dropdown-content">
-        <a class="one" href="resumes/profResume.pdf" target="_blank">Professional Resume</a>
-        <a class="one" href="resumes/bartendingResume.pdf" target="_blank">Bartending Resume</a>
-      </div>
-    </div>
-
-    <a class="one" href="https://www.linkedin.com/in/graham-harris1" target="_blank">LinkedIn</a>
-
-    <div class="dropdown">
-      <a class="one" href="#" target="_blank">NYU Resources</a>
-      <div class="dropdown-content">
-        <a class="one" href="https://www.math.nyu.edu/dynamic/" target="_blank">Mathematics Dept.</a>
-        <a class="one" href="https://cs.nyu.edu/home/index.html" target="_blank">Computer Science Dept.</a>
-        <a class="one" href="https://as.nyu.edu/content/nyu-as/as/departments/italian.html" target="_blank">Italian Dept.</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <a class="one" href="#" target="_blank">Writing Samples</a>
-      <div class="dropdown-content">
-        <a class="one" href="samples/graham_harris_essay1.pdf" target="_blank">English Sample 1</a>
-        <a class="one" href="samples/graham_harris_essay2.pdf" target="_blank">English Sample 2</a>
-        <a class="one" href="samples/graham_harris_essay3.pdf" target="_blank">Scientific Sample</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <a class="one" href="#" target="_blank">Coding Samples</a>
-      <div class="dropdown-content">
-        <a class="one" href="samples/Harris_HW1.zip">Coding Sample 1</a>
-        <a class="one" href="samples/Harris_HW2.zip">Coding Sample 2</a>
-      </div>
-    </div>
+  <div class="footer" style="padding-top: 10px">
+  </div>
 
   <!-- Below Navbar -->
-  <section id="below navbar" class="row">
+  <section id="substance" class="row">
 
     <!-- Sidebar -->
     <section id="side" class="side">
 
-      <h2><b>Contact:</b></h2>
+      <h2><b style="font-size: 115%">Contact:</b></h2>
       <p><b>929.244.0668</b></p>
       <p><b>grahamh1019@gmail.com</b></p>
       <p><b>New York, NY</b></p>
@@ -114,34 +78,43 @@ The basic structure of this website is adapted from w3schools.com -->
       <p>HTML</p>
       <div class="container">
         <div class="progress2 progress-moved">
-          <div class="progress-bar2" style="width: 75%">70%</div>
-        </div>
-      </div>
-      <p>Swift</p>
-      <div class="container">
-        <div class="progress2 progress-moved">
-          <div class="progress-bar2" style="width: 65%">65%</div>
+          <div class="progress-bar2" style="width: 70%">70%</div>
         </div>
       </div>
       <p>CSS</p>
       <div class="container">
         <div class="progress2 progress-moved">
-          <div class="progress-bar2" style="width: 55%">55%</div>
+          <div class="progress-bar2" style="width: 65%">65%</div>
         </div>
       </div>
-      <p>JavaScript</p>
+      <p>Swift</p>
       <div class="container">
         <div class="progress2 progress-moved">
           <div class="progress-bar2" style="width: 30%">30%</div>
         </div>
       </div>
-
+      <p>JavaScript</p>
+      <div class="container">
+        <div class="progress2 progress-moved">
+          <div class="progress-bar2" style="width: 25%">25%</div>
+        </div>
+      </div>
     </section>
 
     <!-- Main body -->
     <section id="main" class="main">
+
+      <section class="buttons" id="buttons">
+        <button onclick="aboutMe()">About Me</button> - 
+        <button onclick="workExp()">Work Experience</button> - 
+        <button onclick="school()">Extracurriculars</button> - 
+        <button onclick="certifications()">Certifications</button> -
+        <button onclick="linksAndDocs()">Links & Documents</button>
+      </section>
+
+      <br>
       
-      <section id="aboutMe">
+      <section id="aboutMe" style="display: block;">
 
         <p class="title"><b>About Me</b></p>
 
@@ -160,9 +133,8 @@ The basic structure of this website is adapted from w3schools.com -->
         <br>
       </section>
       <!-- -------------------- -->
-      <section id="workExp">
+      <section id="workExp" style="display: none;">
 
-        <hr>
         <p class="title"><b>Work Experience</b></p>
 
         <h3>Intern, <a class="two" href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, New York NY, 9/2019 - Present</h3>
@@ -212,9 +184,8 @@ The basic structure of this website is adapted from w3schools.com -->
         <br>
       </section>
       <!-- -------------------- -->
-      <section id="school">
+      <section id="school" style="display: none;">
 
-        <hr>
         <p class="title"><b>Extracurriculars</b></p>
 
         <h3><a class="two" href="https://www.biteclubnyu.com" target="_blank">Bite Club at NYU</a>, 8/2018-Present</h3>
@@ -240,14 +211,45 @@ The basic structure of this website is adapted from w3schools.com -->
         <br>
       </section>
       <!-- -------------------- -->
-      <section id="certifications">
+      <section id="certifications" style="display: none;">
 
-        <hr>
-        <p class="title">Certifications</p>
+        <p class="title"><b>Certifications</b></p>
 
         <p>New York State Bartending Certificate - <a class="two" href="https://www.newyorkbartendingschool.com/" target="_blank">New York Bartending School</a>, January 2020</p>
 
         <br>
+      </section>
+
+      <section id="linksAndDocs" style="display: none; text-align: center">
+        
+        <p class="title"><b>Documents</b></p>
+
+        <h3>Resumes</h3>
+          <p><a class="two" href="resumes/profResume.pdf" target="_blank">Professional Resume</a></p>
+          <p><a class="two" href="resumes/bartendingResume.pdf" target="_blank">Bartending Resume</a></p>
+        <hr class="documents">
+
+        <h3>Writing Samples</h3>
+          <p><a class="two" href="samples/graham_harris_essay1.pdf" target="_blank">English Sample 1</a></p>
+          <p><a class="two" href="samples/graham_harris_essay2.pdf" target="_blank">English Sample 2</a></p>
+          <p><a class="two" href="samples/graham_harris_essay3.pdf" target="_blank">Scientific Sample</a></p>
+        <hr class="documents">
+        
+        <h3>Coding Samples</h3>
+          <p><a class="two" href="samples/Harris_HW1.zip">Coding Sample 1</a></p>
+          <p><a class="two" href="samples/Harris_HW2.zip">Coding Sample 2</a></p>
+
+        <br>
+        <p class="title"><b>Links</b></p>
+
+        <h3>Social Media</h3>
+          <p><a class="two" href="https://www.linkedin.com/in/graham-harris1" target="_blank">LinkedIn</a></p>
+        <hr class="documents">
+
+        <h3>NYU Links</h3>
+          <p><a class="two" href="https://www.math.nyu.edu/dynamic/" target="_blank">Mathematics Dept.</a></p>
+          <p><a class="two" href="https://cs.nyu.edu/home/index.html" target="_blank">Computer Science Dept.</a></p>
+          <p><a class="two" href="https://as.nyu.edu/content/nyu-as/as/departments/italian.html" target="_blank">Italian Dept.</a></p>
       </section>
     
     </section>
@@ -270,13 +272,15 @@ The basic structure of this website is adapted from w3schools.com -->
 <!-- End body -->
 </body>
 
-<!-- Import JavaScript -->
+<!-- Imports -->
 <!-- JS needs the DOM to be loaded before it can do things -->
- <script type="text/javascript" src="script.js"></script> 
+ <script type="text/javascript" src="scripts/typewriter.js"></script> 
+ <script type="text/javascript" src="scripts/buttons.js"></script> 
  <link rel="stylesheet" type="text/css" href="css/styles.css">
  <link rel="stylesheet" type="text/css" href="css/screen.css">
  <link rel="stylesheet" type="text/css" href="css/rotation.css">
  <link rel="stylesheet" type="text/css" href="css/progressbar.css">
+ <link rel="stylesheet" type="text/css" href="css/buttons.css">
 
 </html>
 

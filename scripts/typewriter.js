@@ -1,5 +1,5 @@
 /* Graham Harris */
-/* script.js - Script for website */
+/* typewriter.js - Script for website */
 
 /* Code for this section is from https://stackoverflow.com/questions/42144095/pausing-js-typewriter */
 

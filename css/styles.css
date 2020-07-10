@@ -20,14 +20,15 @@ hr {
   height:2px;
   border-width:0;
   color:black;
-  background-color:black
+  background-color: black;
 }
 
 /* --------------------------------------- */
 
 /* Header/logo Title */
 .header {
-  padding: 100px;
+  padding: 120px;
+  padding-top: 150px;
   text-align: center;
   background-image: url('../img/plant2.jpg');
   background-repeat: no-repeat;
@@ -41,15 +42,15 @@ hr {
 .header h1 {
   font-size: 40px;
   color: white;
-  /* font-family: 'Major Mono Display', monospace; */
-  /* font-family: 'Cabin Sketch', cursive; */
   font-family: 'Vampiro One', cursive;
+  text-shadow: 4px 4px 1px #698B69;
 }
 
 /* Change the font of the typewriter */
 .header h3 {
   font-size: 20px;
   color: white;
+  text-shadow: 1px 1px 0px #698B69;
 }
 
 /* --------------------------------------- */
@@ -182,6 +183,18 @@ hr {
 
 /* --------------------------------------- */
 
+/* hr bar specifically for links & documents section */
+
+hr.documents  {
+  height:2px;
+  border-width:0;
+  color:black;
+  background-color: black;
+  width: 5%;
+}
+
+/* --------------------------------------- */
+
 /* Footer */
 
 .footer {
@@ -200,13 +213,4 @@ hr {
 }
 
 /* --------------------------------------- */
-
-/* Tests and example objects */
-
-/* An example object*/
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 

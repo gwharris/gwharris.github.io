@@ -1,0 +1,25 @@
+/* Graham Harris */
+/* buttons.css */
+
+/* --------------------------------------------------- */
+
+.buttons {
+  text-align: center;
+  color: black;
+  background-color: #DBE6E0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition-duration: 0.5s;
+}
+
+.buttons button {
+  font-size: 16px;
+  font-family: 'Inconsolata';
+  border: none;
+  background-color: #DBE6E0;
+
+}
+
+.button button:hover {
+	background-color: white;
+}
