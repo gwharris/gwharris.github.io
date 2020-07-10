@@ -1,11 +1,13 @@
-// Import statements
+// Import button variables
 var a = document.getElementById("aboutMe");
 var b = document.getElementById("workExp");
 var c = document.getElementById("school");
 var d = document.getElementById("certifications");
 var e = document.getElementById("linksAndDocs");
+// Email variable
+var f = document.getElementById("email");
 
-
+// Main section button displays
 function aboutMe() {
 	if (a.style.display === "none") {
 		a.style.display = "block";
@@ -54,5 +56,15 @@ function linksAndDocs() {
 		d.style.display = "none";
 		e.style.display = "block";
 	} 
+}
+
+// Controls the email display
+function email() {
+	if (f.style.display === "none") {
+		f.style.display = "block";
+	}
+	else {
+		f.style.display = "none";
+	}
 }
 

@@ -43,7 +43,7 @@ hr {
   font-size: 40px;
   color: white;
   font-family: 'Vampiro One', cursive;
-  text-shadow: 4px 4px 1px #698B69;
+  text-shadow: 2px 3px 1px #698B69;
 }
 
 /* Change the font of the typewriter */
@@ -51,82 +51,6 @@ hr {
   font-size: 20px;
   color: white;
   text-shadow: 1px 1px 0px #698B69;
-}
-
-/* --------------------------------------- */
-
-/* Style the navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #2F4F2F;
-  border: none;
-}
-
-/* Style the navigation bar links */
-.navbar a.one {
-  float: left;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  z-index: 1;
-}
-
-/* Right-aligned link */
-.navbar a.one.right {
-  float: right;
-}
-
-/* Change color on hover */
-.navbar a.one:hover {
-  background-color: #698B69;
-  color: white;
-}
-
-/* --------------------------------------- */
-
-/* Dropdown menu objects */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #2F4F2F;
-  box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.3);
-  z-index: 2;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown button {
-  float: left;
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  z-index: 1;
-}
-
-.dropdown button:hover {
-  background-color: #698B69;
-  color: white;
 }
 
 /* --------------------------------------- */
@@ -198,7 +122,7 @@ hr.documents  {
 /* Footer */
 
 .footer {
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   background: #698B69;
 }
