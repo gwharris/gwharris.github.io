@@ -16,7 +16,6 @@
 /* Style the navigation bar links */
 .navbar a.one {
   float: left;
-  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 20px;
@@ -67,7 +66,6 @@
 
 .dropdown button {
   float: left;
-  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 20px;
