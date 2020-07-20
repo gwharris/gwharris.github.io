@@ -1,10 +1,13 @@
+// Graham Harris
+// darkMode.js - converts between dark and light modes
 
-// Code from https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+// Code adapted from
+// https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
     
 var darkOn;
-var sections = ["main", "side", "buttons", "footer", "footer2"]
+var sections = ["main", "side", "buttons", "footer", "footer2", "linksAndDocs", "info", "line"]
 
 function changeTheme() {
     for (i=0; i<sections.length; i++) {
@@ -16,7 +19,7 @@ function changeTheme() {
 function toggleDark() {
 
     // If the user already prefers dark mode:
-    if (prefersDarkScheme.matches) {
+    if (prefersDark.matches) {
         // "Body" is treated differently because its an HTML tag and not a class
         document.body.classList.toggle("dark-theme");
         // Change the theme of class elements

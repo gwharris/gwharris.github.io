@@ -41,14 +41,23 @@
 	background-color: white;
   border-radius: 8px;
 }
-.buttons.dark-theme button:hover, button:active {
+.buttons.dark-theme button:hover {
 	background-color: black;
   border-radius: 8px;
 }
-
+.buttons.dark-theme button:active {
+	background-color: black;
+  border-radius: 8px;
+}
 .buttons button:focus {
   outline: none;
   box-shadow: none;
   background-color: white;
+  border-radius: 8px;
+}
+.buttons.dark-theme button:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: black;
   border-radius: 8px;
 }
