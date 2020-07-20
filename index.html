@@ -50,13 +50,14 @@ The basic structure of this website is adapted from w3schools.com -->
     <h1>Graham Harris</h1>
 
     <!-- Code for typewriter taken from https://stackoverflow.com/questions/42144095/pausing-js-typewriter -->
-    <div class = "type-wrap">
+    <div class="type-wrap">
       <h3 class="typewrite" style="padding: 20px" data-period="2000" data-type='["driven.", "enthusiastic.", "passionate.", "diligent."]'>
         <span class="wrap"></span></h3>
       </div>
   </section>
 
-  <div class="footer" style="padding-top: 10px">
+  <div class="footer" id="footer2" style="padding: 3px;">
+    <p style="text-align: right; padding-left: 10px;"><button onclick="toggleDark()">Toggle Dark Mode</button></p>
   </div>
 
   <!-- Below Navbar -->
@@ -67,7 +68,7 @@ The basic structure of this website is adapted from w3schools.com -->
 
       <h2><b style="font-size: 115%">Contact:</b></h2>
       <p><b>929.244.0668</b></p>
-      <p><b><a style="color: #2F4F2F" href="mailto:grahamh1019@gmail.com">grahamh1019@gmail.com</a></b></p>
+      <p><b><a  href="mailto:grahamh1019@gmail.com">grahamh1019@gmail.com</a></b></p>
       <p><b>New York, NY</b></p>
 
       <hr>
@@ -111,7 +112,7 @@ The basic structure of this website is adapted from w3schools.com -->
           <div class="progress-bar2" style="width: 25%">25%</div>
         </div>
       </div>
-      <p>Find me on <a href="https://github.com/instagr4h4m" target="_blank" style="color: #2F4F2F">GitHub</a>!</p>
+      <p>Find me on <a href="https://github.com/instagr4h4m" target="_blank">GitHub</a>!</p>
       <br>
     </section>
 
@@ -296,7 +297,8 @@ The basic structure of this website is adapted from w3schools.com -->
 <!-- Imports -->
 <!-- JS needs the DOM to be loaded before it can do things -->
  <script type="text/javascript" src="scripts/typewriter.js"></script> 
- <script type="text/javascript" src="scripts/buttons.js"></script> 
+ <script type="text/javascript" src="scripts/buttons.js"></script>
+ <script type="text/javascript" src="scripts/darkMode.js"></script> 
  <link rel="stylesheet" type="text/css" href="css/styles.css">
  <link rel="stylesheet" type="text/css" href="css/screen.css">
  <link rel="stylesheet" type="text/css" href="css/rotation.css">
