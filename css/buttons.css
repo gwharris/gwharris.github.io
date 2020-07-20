@@ -24,7 +24,7 @@
 
 }
 
-.buttons button:hover {
+.buttons button:hover, button:active {
 	background-color: white;
   border-radius: 8px;
 }
@@ -32,45 +32,6 @@
 .buttons button:focus {
   outline: none;
   box-shadow: none;
-}
-
-.buttons button:active { 
-  outline: none;
-  border: none;
-}
-
-/* Email button properties */
-.emailButton {
-  text-align: left;
-  color: black;
-  padding: 0px;
-  background-color: #DBE6E0;
-  transition-duration: 0.5s;
-  outline: 0px !important;
-  box-shadow: none !important;
-  border-radius: 5px;
-}
-
-.emailButton button {
-  font-size: 15px;
-  font-family: 'Inconsolata';
-  border: none;
-  background-color: #DBE6E0;
-  text-decoration: underline;
-
-}
-
-.emailButton button:hover {
   background-color: white;
   border-radius: 8px;
-}
-
-.emailButton button:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.emailButton button:active { 
-  outline: none;
-  border: none;
 }
