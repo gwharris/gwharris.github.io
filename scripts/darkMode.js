@@ -10,6 +10,7 @@ var darkOn;
 var sections = ["main", "side", "buttons", "footer", "footer2", "linksAndDocs", "info", "line"]
 
 function changeTheme() {
+    // For every section that has dark mode enabled, add/remove "dark-theme"
     for (i=0; i<sections.length; i++) {
         document.getElementById(sections[i]).classList.toggle("dark-theme");
     }
