@@ -1,0 +1,49 @@
+/* Graham Harris */
+/* hoverbox.css - Forces a blur on images that are hovered on */
+
+/* Adapted from https://codepen.io/nxworld/pen/ZYNOBZ  */
+
+/* --------------------------------------------------- */
+
+/* Image */
+.hover07 img {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+}
+
+/* Blur on hover */
+.hover07 img:hover {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  opacity: 100%;
+}
+
+/* Box that should appear in the middle of the image */
+.middle {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Show the box on hover */
+.hover07:hover .middle {
+  display: block;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+}
