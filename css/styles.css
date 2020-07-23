@@ -1,227 +1,71 @@
-/* Graham Harris */
-/* styles.css - Formatting for website */
-
-/* Adapted from w3schools.com */
-
-/* --------------------------------------------------- */
-
-* {
-  box-sizing: border-box;
-  transition-duration: 0.2s;
-}
-
-/* Body attributes */
 body {
-  font-family: 'Inconsolata';
-  margin: 0;
-  /* cursor: url("../img/cursor2.png"), auto; */
+    font-family: "Inconsolata";
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
 }
-
-/* Dark Mode attributes */
 body.dark-theme {
-  font-family: 'Inconsolata';
-  margin: 0;
-
-}
-body.dark-theme h1,
-body.dark-theme h2,
-body.dark-theme h3,
-body.dark-theme h4,
-body.dark-theme p {
-  color: white;
+    font-family: "Inconsolata";
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
 }
 
-hr {
-  height:2px;
-  border-width:0;
-  color:black;
-  background-color: black;
+@font-face {
+    font-family: testfont;
+    src: url("../img/Holtzberg-Regular.otf") format("opentype");
 }
 
-/* --------------------------------------- */
-
-/* Header/logo Title */
-.header {
-  padding: 120px;
-  padding-top: 150px;
-  text-align: center;
-  background-image: url('../img/plant2.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-  opacity: 0.95;
-  color: black;
+.heading {
+    font-family: "testfont";
+    padding: 15px;
+    padding-bottom: 50px;
+    font-size: 250%;
+    text-align: center;
+    color: inherit;
+}
+.heading.dark-theme {
+    color: inherit;
 }
 
-/* Change the font of the header */
-.header h1 {
-  font-size: 40px;
-  color: white;
-  font-family: 'Vampiro One', cursive;
-  text-shadow: 2px 3px 1px #698B69;
+/* ---------------------------------- */
+
+.info {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: inherit;
+}
+.info h1 {
+    font-size: 200%;
+}
+.info a {
+    color: rgb(90, 90, 90);
+}
+.info.dark-theme a {
+    color: rgb(145, 145, 145);;
 }
 
-/* Change the font of the typewriter */
-.header h3 {
-  font-size: 20px;
-  color: white;
-  text-shadow: 1px 1px 0px #698B69;
+/* ---------------------------------- */
+
+hr.documents {
+    width: 10%;
 }
 
-/* --------------------------------------- */
-
-/* Left column */
-/* Create two unequal columns that sit next to each other */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-}
-
-/* --------------------------------------- */
-
-/* Left column */
-.side {
-  -ms-flex: 20%; /* IE10 */
-  flex: 20%;
-  background-color: #DBE6E0;
-  padding: 20px;
-}
-.side.dark-theme {
-  -ms-flex: 20%; /* IE10 */
-  flex: 20%;
-  background-color: rgb(0, 45, 0);
-  padding: 20px;
-}
-
-/* Side links */
-.side a {
-  color: #2F4F2F;
-}
-.side.dark-theme a {
-  color: #DBE6E0;
-}
-
-/* Line */
-hr.line {
-  border-color: black;
-  background-color: black;
-}
-hr.line.dark-theme {
-  border-color: white;
-  background-color: white;
-}
-
-/* --------------------------------------- */
-
-/* Main/right column */
-
-/* Section titles */
-.main p.title {
-  font-size: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 1em;
-}
-
-/* Indent the main text */
-.main p {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 1.5em;
-}
-
-.main ul {
-  list-style-type: circle;
-  color: black;
-}
-.main.dark-theme ul {
-  color: white;
-}
-
-/* Main column links */
-.main a {
-  color: #698B69;
-  text-decoration: underline; 
-}
-.main.dark-theme a {
-  color: #bad8c0;
-}
-.main a:hover, a:active {
-  text-decoration: none;
-}
-
-/* Main settings */
-.main {   
-  -ms-flex: 80%; /* IE10 */
-  flex: 80%;
-  background-color: white;
-  padding: 20px;
-}
-.main.dark-theme {
-  background-color: rgb(40, 75, 40);
-}
-
-/* --------------------------------------- */
-
-/* hr bar specifically for links & documents section */
-
-.documents hr {
-  height:2px;
-  border-width:0;
-  border: black;
-  width: 5%;
-}
-.documents.dark-theme hr {
-  border: 1px solid white;
-}
-
-/* --------------------------------------- */
-
-/* Footer */
+/* ---------------------------------- */
 
 .footer {
-  padding: 15px;
-  text-align: center;
-  background: #698B69;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
-
-.footer p,
-.footer a {
-  text-decoration: none;
-  color: white;
+.footer a,
+.footer p {
+    display: inline;
+    padding-bottom: 10px;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
 }
-
 .footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-
-.footer.dark-theme {
-  background-color: rgb(0, 35, 0);
-}
-
-/* --------------------------------------- */
-
-/* Toggle dark mode button */
-/* Called "footer" cause the bar reuses the footer class */
-.footer button {
-  background-color: inherit;
-  border: none;
-  border-radius: 8px;
-  margin: auto;
-  color: white;
-  font-family: "Inconsolata";
-  outline: 0px !important;
-  box-shadow: none !important;
-}
-.footer button:hover, button:active {
-  text-decoration: underline;
-  color: white;
-}
-.footer button:focus {
-  color: white;
-}
-
-
 

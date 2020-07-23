@@ -61,3 +61,36 @@
   background-color: black;
   border-radius: 8px;
 }
+
+/* --------------------------------------------------- */
+
+/* Buttons Style 2 */
+.buttons2 {
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  padding-top: 30px;
+  outline: 0px !important;
+  box-shadow: none !important;
+  border-radius: 5px;
+}
+
+.buttons2 button {
+  font-size: 16px;
+  font-family: "Inconsolata";
+  border: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+.buttons2 button:hover, button:active {
+	background-color: rgb(145, 145, 145);
+  border-radius: 8px;
+}
+.buttons2 button:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: rgb(145, 145, 145);
+  border-radius: 8px;
+}
+
