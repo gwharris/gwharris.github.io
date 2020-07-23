@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 25%;
+    min-height: 150px;
+    min-width: 150px;
+    align-content: center;
+    text-align: center;
+    background-color: inherit;
+    flex-direction: column;
+}
+

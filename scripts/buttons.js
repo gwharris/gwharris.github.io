@@ -1,70 +1,48 @@
-// Import button variables
 var a = document.getElementById("aboutMe");
 var b = document.getElementById("workExp");
 var c = document.getElementById("school");
 var d = document.getElementById("certifications");
 var e = document.getElementById("linksAndDocs");
-// Email variable
-var f = document.getElementById("email");
+var f = document.getElementById("title");
+
+var arr = [a,b,c,d,e,f];
+
+var index = 0;
+
+function loop(index) {
+	for (i=0; i<arr.length;i++) {
+		if (i == (index)) {
+			arr[i].style.display = "block";
+		}
+		else {
+			arr[i].style.display = "none";
+		}
+	}
+}
 
 // Main section button displays
 function aboutMe() {
-	if (a.style.display === "none") {
-		a.style.display = "block";
-		b.style.display = "none";
-		c.style.display = "none";
-		d.style.display = "none";
-		e.style.display = "none";
-	} 
+	loop(0);
 }
 
 function workExp() {
-	if (b.style.display === "none") {
-		a.style.display = "none";
-		b.style.display = "block";
-		c.style.display = "none";
-		d.style.display = "none";
-		e.style.display = "none";
-	} 
+	loop(1);
 }
 
 function school() {
-	if (c.style.display === "none") {
-		a.style.display = "none";
-		b.style.display = "none";
-		c.style.display = "block";
-		d.style.display = "none";
-		e.style.display = "none";
-	} 
+	loop(2);
 }
 
 function certifications() {
-	if (d.style.display === "none") {
-		a.style.display = "none";
-		b.style.display = "none";
-		c.style.display = "none";
-		d.style.display = "block";
-		e.style.display = "none";
-	} 
+	loop(3);
 }
 
 function linksAndDocs() {
-	if (e.style.display === "none") {
-		a.style.display = "none";
-		b.style.display = "none";
-		c.style.display = "none";
-		d.style.display = "none";
-		e.style.display = "block";
-	} 
+	loop(4);
 }
 
-// Controls the email display
-function email() {
-	if (f.style.display === "none") {
-		f.style.display = "block";
-	}
-	else {
-		f.style.display = "none";
-	}
+// Not in use
+function title() {
+	loop(5);
 }
 
