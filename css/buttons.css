@@ -27,7 +27,7 @@
 
 .buttons button {
   font-size: 16px;
-  font-family: 'Inconsolata';
+  font-family: inherit;
   border: none;
   background-color: #DBE6E0;
   color: black;
@@ -77,7 +77,7 @@
 
 .buttons2 button {
   font-size: 16px;
-  font-family: "Inconsolata";
+  font-family: inherit;
   border: none;
   background-color: inherit;
   color: inherit;

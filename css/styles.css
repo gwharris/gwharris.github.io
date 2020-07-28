@@ -86,13 +86,11 @@ hr {
   -ms-flex: 20%; /* IE10 */
   flex: 20%;
   background-color: #DBE6E0;
-  padding: 20px;
+  padding: 2%;
+  padding-top: 10px;
 }
 .side.dark-theme {
-  -ms-flex: 20%; /* IE10 */
-  flex: 20%;
   background-color: rgb(0, 45, 0);
-  padding: 20px;
 }
 
 /* Side links */
@@ -152,12 +150,15 @@ hr.line.dark-theme {
   text-decoration: none;
 }
 
+/* --------------------------------------- */
+
 /* Main settings */
 .main {   
   -ms-flex: 80%; /* IE10 */
   flex: 80%;
   background-color: white;
-  padding: 20px;
+  padding: 5%;
+  padding-top: 20px;
 }
 .main.dark-theme {
   background-color: rgb(40, 75, 40);
@@ -175,6 +176,15 @@ hr.line.dark-theme {
 }
 .documents.dark-theme hr {
   border: 1px solid white;
+}
+
+/* --------------------------------------- */
+
+/* Makes section sticky */
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 /* --------------------------------------- */
@@ -211,7 +221,7 @@ hr.line.dark-theme {
   border-radius: 8px;
   margin: auto;
   color: white;
-  font-family: "Inconsolata";
+  font-family: inherit;
   outline: 0px !important;
   box-shadow: none !important;
 }
