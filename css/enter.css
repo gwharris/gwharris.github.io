@@ -1,13 +1,13 @@
 body {
     font-family: "Inconsolata";
-    background-color: white;
-    color: black;
+    background-color: #DBE6E0;
+    color: rgb(39, 39, 39);
     transition-duration: 1s;
 }
 body.dark-theme {
     font-family: "Inconsolata";
-    background-color: black;
-    color: white;
+    background-color: rgb(39, 39, 39);
+    color: #DBE6E0;
     transition-duration: 1s;
 }
 
@@ -17,8 +17,8 @@ body.dark-theme {
 }
 
 h1 {
-    font-size: 300%;
-    font-family: "testfont";
+    font-size: 3em;
+    font-family: "Vampiro One", cursive;
     opacity: 1;
 }
 
@@ -57,5 +57,3 @@ h1 {
 .landing a:hover {
     text-decoration: underline;
 }
-
-

@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 
-<!-- Graham Harris -->
+<!-- Graham Harris
+
+The basic structure of this website is adapted from w3schools.com -->
+<!-- ------------------------------------ -->
 
 <html lang="en">
 <head>
 
   <!-- FONTS -->
   <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'> <!-- font-family: 'Inconsolata'; -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet"> <!-- font-family: 'Courier Prime', monospace;-->
   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"><!-- font-family: 'Major Mono Display', monospace; -->
-  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> <!-- font-family: 'Staatliches', cursive; -->
+  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet"><!-- font-family: 'Cabin Sketch', cursive; -->
+  <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet"><!-- font-family: 'Vampiro One', cursive; -->
 
   <!-- "Favicons" are the icons in a browser tab -->
-  <!-- <link rel="icon" href="img/favicon2.ico"> -->
+  <link rel="icon" href="img/favicon2.ico">
 
   <!-- Metadata -->
   <title>Graham Harris</title>
@@ -34,23 +39,264 @@
 </head>
 <!-- --------------------------------------- -->
 <body>
-  
-  <section class="landing">
-    <div class="center">
-      <h1>Graham Harris</h1>
-      <a href="mainPage.html">enter</a>
-    </div>
+
+  <!-- Header -->
+  <section class="header">
+
+    <h1>Graham Harris</h1>
+
+    <!-- Code for typewriter taken from https://stackoverflow.com/questions/42144095/pausing-js-typewriter -->
+    <div class="type-wrap">
+      <h3 class="typewrite" style="padding: 20px" data-period="2000" data-type='["driven.", "enthusiastic.", "passionate.", "diligent."]'>
+        <span class="wrap"></span></h3>
+      </div>
+  </section>
+
+  <div class="footer" id="footer2" style="padding: 3px;">
+    <p style="text-align: right; padding-right: 10px;"><button onclick="toggleDark()">Toggle Dark Mode</button></p>
+  </div>
+
+  <!-- Below Navbar -->
+  <section id="substance" class="row">
+
+    <!-- Sidebar -->
+    <section id="side" class="side">
+
+      <section id="info">
+        <h2><b style="font-size: 115%">Contact:</b></h2>
+        <p><b>929.244.0668</b></p>
+        <p><b><a  href="mailto:grahamh1019@gmail.com">grahamh1019@gmail.com</a></b></p>
+        <p><b>New York, NY</b></p>
+        <hr class="line" id="line">
+      </section>
+      
+      
+      <!-- Programming proficiencies -->
+      <section id="proficiencies">
+        <h3><b style="font-size: 115%">Programming Language Proficiency</b></h3>
+        <p>Java</p>
+        <div class="container">
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2" style="width: 80%">80%</div>
+          </div>
+        </div>
+        <p>HTML</p>
+        <div class="container">
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2" style="width: 75%">75%</div>
+          </div>
+        </div>
+        <p>CSS</p>
+        <div class="container">
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2" style="width: 75%">75%</div>
+          </div>
+        </div>
+        <p>JavaScript</p>
+        <div class="container">
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2" style="width: 70%">70%</div>
+          </div>
+        </div>
+        <p>Python</p>
+        <div class="container">
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2" style="width: 70%">70%</div>
+          </div>
+        </div>
+        <p>Swift</p>
+        <div class="container">
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2" style="width: 25%">25%</div>
+          </div>
+        </div>
+        <p>Find me on <a href="https://github.com/instagr4h4m" target="_blank">GitHub</a>!</p>
+        <br>
+      </section>
+      
+    </section>
+
+    <!-- Main body -->
+    <section id="main" class="main">
+
+      <section class="buttons" id="buttons">
+        <button onclick="aboutMe()">About Me</button> - 
+        <button onclick="workExp()">Work Experience</button> - 
+        <button onclick="school()">Extracurriculars</button> - 
+        <button onclick="certifications()">Certifications</button> -
+        <button onclick="linksAndDocs()">Links & Documents</button>
+      </section>
+
+      <br>
+      
+      <section id="aboutMe" style="display: block;">
+
+        <p class="title"><b>About Me</b></p>
+
+        <p style="font-size: 115%"><b>Welcome! My name's Graham - I'm a rising junior at NYU majoring in Math and minoring in Computer Science and Italian.</b></p>
+
+        <p>As a student, I spend a lot of time in and out of the classroom working on various projects. When I'm not at school, I enjoy coding, taking care of plants, and trying new food!</p>
+
+        <p><b style="font-size: 115%">Coding: </b>I've been learning how to code for about a year and am always looking for new projects. I have experience in client-side coding and development, and am currently learning web and app development. For example, one of my Covid-19 quarantine projects has been to learn HTML5, CSS3, and JavaScript - the result is this website. I pride myself in being able to learn new languages quickly and enjoy picking up new styles of code.</p>
+
+        <p><b style="font-size: 115%">Horticulture: </b>Horticulture is something I've been doing as a hobby for a few years now, but is something I'd love to do professionally. I started out by collecting a couple indoor plants and have begun learning about vegetables and herbs (some of which I use for cocktails!) and even some arbory. I'm fascinated by urban greenspaces, agritech, and green interior design.</p>
+
+        <p><b style="font-size: 115%">Food: </b>As an NYU student, I have access to NYC's rich food scene, which I take advantage of through <a href="#school">Bite Club</a>. Bite Club is a new club at NYU that makes restaurants accessible to our community through partnerships and editorial work. We tackle all sorts of topics ranging from lighthearted trends, fads and recipes, to more serious topics, such as racism and sustainability in the NYC food industry. For the 2020-2021 academic year, I'll be the club's president, and I look forward to trying even more local restaurants and bringing my passion for food to my community.</p>
+
+        <p><b> If you have any questions, please reach out using one of the methods in the left column. Looking forward to hearing from you!</b></p>
+
+        <br>
+      </section>
+      <!-- -------------------- -->
+      <section id="workExp" style="display: none;">
+
+        <p class="title"><b>Work Experience</b></p>
+
+        <h3>Intern, <a href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, New York NY, 9/2019 - Present</h3>
+
+        <p>NYU's Entrepreneurial Institute is a resource available to the NYU community for the purpose of starting up businesses. They offer several accelerators, "pitchfests," and other events, as well as workshops, trainings, and other resources.</p>
+
+        <p><i>Responsibilities for NYU's Entrepreneurial Institute:</i></p>
+        <ul>
+          <li>Facilitated entrepreneurship events, such as start-up incubators and venture capital “pitchfests”.</li>
+          <li>Learned start-up basics through Institute functions like coaching and mentorship programs.</li>
+          <li>Guided check-in, general information, and safety.</li>
+        </ul>
+
+        <br>
+
+        <h3>Brand Ambassador, <a href="https://www.smorgasburg.com/" target="_blank">Smorgasburg</a>, New York NY, 4/2019 - 10/2019</h3>
+
+        <p>Smorgasburg is the largest open-air food market in America, feturing over 100 vendor that cater to ~30,000 patrons every weekend.</p>
+
+        <p><i>Responsibilities for Smorgasburg:</i></p>
+        <ul>
+          <li>Assisted sales operations with ~8,000 visitors per day.</li>
+          <li>Worked with management on brand deals and activations.</li>
+          <li>Led weekly event setup, merchandise organization, and customer experience.</li>
+        </ul>
+
+        <br>
+
+        <h3>Office Assistant, <a href="https://www.law.nyu.edu/centers/judicial" target="_blank">NYU Law Institute of Judicial Administration (IJA) and Labor Center</a>, New York NY, 5/2019 - 8/2019</h3>
+
+        <p>The Institute of Judicial Administration at New York University School of Law (IJA) is a department of NYU Law that is a leader in judicial education and a forum for non-partisan thinking and discussion about the administration of justice.</p>
+
+        <br>
+
+        <h3>Social Media Intern, <a href="https://foodperiod.com/" target="_blank">Food Period</a>, New York NY, 11/2018 - 6/2019</h3>
+
+        <p>Food Period is a women's health startup focused on nutrition.</p>
+
+        <p><i>Responsibilities for Food Period:</i></p>
+        <ul>
+          <li>Recorded Instagram data and planned social content for women’s health startup.</li>
+          <li>Created Food Period’s email marketing plan and email workflow with co-founders.</li>
+          <li>Completed analysis tasks resulting in Instagram growth of ~300 followers/week.</li>
+        </ul>
+
+        <br>  
+
+        <h3>Swim Instructor/Lifeguard, YMCA, Wyckoff NJ, 6/2016 - 8/2018</h3>
+
+        <br>
+      </section>
+      <!-- -------------------- -->
+      <section id="school" style="display: none;">
+
+        <p class="title"><b>Extracurriculars</b></p>
+
+        <h3><a href="https://www.biteclubnyu.com" target="_blank">Bite Club at NYU</a>, 8/2018-Present</h3>
+
+        <p>Bite Club at NYU was officially founded in 2020. Previously, the club operated under the Spoon University brand, but split in 2019.</p>
+
+        <p>Our mission at Bite Club is to make food topics more accessible to the NYU community and to empower our staff. Bite Club has three main pillars: editorial work, social media, and marketing/PR.</p>
+
+        <ul> 
+         <li>Editorial - The editorial team writes about restaurants, recipes, current events in the food industry.</li>
+         <li>Social - On the Bite Club instagram (<a href="https://www.instagram.com/biteclubnyu/?hl=en" target="_blank">@biteclubnyu</a>), we post pictures of whatever our staff is eating. We feature our sponsors first and foremost, but also love to display our staff's creations!</li>
+         <li>Marketing - In exchange for product, our team posts to the aforementioned instagram page. We then distribute the product and promotional materials to NYU students through club events.</li>
+        </ul>
+
+        <br>
+
+        <h3>Puppy Raiser at <a href="https://www.seeingeye.org/" target="_blank">The Seeing Eye</a>, 5/2016 - 9/2019</h3>
+
+        <p>The Seeing Eye's mission is to enhance the independence, dignity and self-confidence of people who are blind, through the use of specially trained dogs.</p>
+
+        <p>Families who raise Seeing Eye dogs housebreak, socialize, and train the dogs for anywhere between a year to a year-and-a-half. The dogs are then formally trained at a professional facility in Morristown NJ and matched with a recipient.</p>
+
+        <br>
+      </section>
+      <!-- -------------------- -->
+      <section id="certifications" style="display: none;">
+
+        <p class="title"><b>Certifications</b></p>
+
+        <p>New York State Bartending Certificate - <a href="https://www.newyorkbartendingschool.com/" target="_blank">New York Bartending School</a>, January 2020</p>
+
+        <br>
+      </section>
+
+      <section id="linksAndDocs" class="documents" style="display: none; text-align: center">
+        
+        <p class="title"><b>Documents</b></p>
+
+        <h3>Resumes</h3>
+          <p><a href="resumes/profResume.pdf" target="_blank">Professional Resume</a></p>
+          <p><a href="resumes/bartendingResume.pdf" target="_blank">Bartending Resume</a></p>
+        <hr class="documents">
+
+        <h3>Writing Samples</h3>
+          <p><a href="samples/graham_harris_essay1.pdf" target="_blank">English Sample 1</a></p>
+          <p><a href="samples/graham_harris_essay2.pdf" target="_blank">English Sample 2</a></p>
+          <p><a href="samples/graham_harris_essay3.pdf" target="_blank">Scientific Sample</a></p>
+        <hr class="documents">
+        
+        <h3>Coding Samples</h3>
+          <p><a href="samples/Harris_HW1.zip">Coding Sample 1</a></p>
+          <p><a href="samples/Harris_HW2.zip">Coding Sample 2</a></p>
+
+        <br>
+        <p class="title"><b>Links</b></p>
+
+        <h3>Professional Media Profiles</h3>
+          <p><a  href="https://www.linkedin.com/in/graham-harris1" target="_blank">LinkedIn</a></p>
+          <p><a href="https://github.com/instagr4h4m" target="_blank">GitHub</a></p>
+        <hr class="documents">
+
+        <h3>NYU Departments</h3>
+          <p><a href="https://www.math.nyu.edu/dynamic/" target="_blank">Mathematics Dept.</a></p>
+          <p><a href="https://cs.nyu.edu/home/index.html" target="_blank">Computer Science Dept.</a></p>
+          <p><a href="https://as.nyu.edu/content/nyu-as/as/departments/italian.html" target="_blank">Italian Dept.</a></p>
+      </section>
     
+    </section>
+  </section>
+
+  <section id="header2" class="header" style="padding: 25px"> 
+  </section>
+
+  <!-- Footer -->
+  <section id="footer" class="footer">
+    <p> - <a href="#">Return to Top</a> - </p>
   </section>
 
 <!-- End body -->
 </body>
 
 <!-- Imports -->
+<!-- JS needs the DOM to be loaded before it can do things -->
  <script type="text/javascript" src="scripts/typewriter.js"></script> 
+ <script type="text/javascript" src="scripts/buttons.js"></script>
  <script type="text/javascript" src="scripts/darkMode.js"></script> 
- <link rel="stylesheet" type="text/css" href="css/enter.css">
+ <link rel="stylesheet" type="text/css" href="css/styles.css">
+ <link rel="stylesheet" type="text/css" href="css/screen.css">
+ <link rel="stylesheet" type="text/css" href="css/rotation.css">
+ <link rel="stylesheet" type="text/css" href="css/progressbar.css">
  <link rel="stylesheet" type="text/css" href="css/buttons.css">
+ <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+ <link rel="stylesheet" type="text/css" href="css/hoverbox.css">
 
 </html>
 

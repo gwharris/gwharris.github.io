@@ -7,7 +7,7 @@
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
     
 var darkOn;
-var sections = ["main", "side", "buttons", "footer", "footer2", "linksAndDocs", "info", "line", "heading", "landing", "buttons2", "footer", "info"]
+var sections = ["main", "side", "buttons", "footer", "footer2", "linksAndDocs", "info", "line", "heading", "landing", "buttons2", "footer"]
 
 function changeTheme() {
     // For every section that has dark mode enabled, add/remove "dark-theme"
@@ -27,16 +27,16 @@ function toggleDark() {
         changeTheme();
         darkOn = false;
     } 
+    else if (!prefersDark.matches) {
+        darkOn = false;
+    } 
     else if (darkOn) {
-        // "Body" is treated differently because its an HTML tag and not a class
         document.body.classList.toggle("dark-theme");
-        // Change the theme of class elements
         changeTheme();
         darkOn = false;
     }
     // If the user doesn't prefer dark mode or toggles it off:
     else {
-        // Same logic as above
         document.body.classList.toggle("dark-theme");
         changeTheme();
         darkOn = true;
