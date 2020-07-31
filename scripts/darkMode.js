@@ -7,7 +7,7 @@
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
     
 var darkOn;
-var sections = ["main", "side", "buttons", "footer", "footer2", "linksAndDocs", "info", "line", "heading", "landing", "buttons2", "footer"]
+var sections = ["aboutMe", "workExp", ]
 
 function changeTheme() {
     // For every section that has dark mode enabled, add/remove "dark-theme"
