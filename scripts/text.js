@@ -14,7 +14,13 @@ catch {
 }
 
 function readFile(i) {
-    
+    try {
+        var text = fs.readFileSync("../text/" + sections[i].fileName);
+    }
+    catch {
+        sections = null; 
+    }
+    document.getElementById("textTest").value = text;
 }
 
 
