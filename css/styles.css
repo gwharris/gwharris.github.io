@@ -17,12 +17,6 @@ body {
   /* cursor: url("../img/cursor2.png"), auto; */
 }
 
-/* Dark Mode attributes */
-body.dark-theme {
-  font-family: 'Inconsolata';
-  margin: 0;
-
-}
 body.dark-theme h1,
 body.dark-theme h2,
 body.dark-theme h3,
@@ -42,9 +36,9 @@ hr {
 
 /* Header/logo Title */
 .header {
-  padding: 120px;
-  padding-top: 150px;
-  text-align: center;
+  padding: 40px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   background-image: url('../img/plant2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -55,7 +49,9 @@ hr {
 
 /* Change the font of the header */
 .header h1 {
-  font-size: 40px;
+  padding-left: 20px;
+  padding-bottom: 0px;
+  font-size: 55px;
   color: white;
   font-family: 'Vampiro One', cursive;
   text-shadow: 2px 3px 1px #698B69;
@@ -63,7 +59,7 @@ hr {
 
 /* Change the font of the typewriter */
 .header h3 {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   text-shadow: 1px 1px 0px #698B69;
 }
@@ -105,10 +101,12 @@ hr {
 hr.line {
   border-color: black;
   background-color: black;
+  border: none;
 }
 hr.line.dark-theme {
   border-color: white;
   background-color: white;
+  border: none;
 }
 
 /* --------------------------------------- */
@@ -133,6 +131,7 @@ hr.line.dark-theme {
 .main ul {
   list-style-type: circle;
   color: black;
+  margin-left: 1em;
 }
 .main.dark-theme ul {
   color: white;
@@ -212,6 +211,11 @@ div.sticky {
 }
 
 /* --------------------------------------- */
+
+/* Footer */
+.footer {
+  font-size: 14px;
+}
 
 /* Toggle dark mode button */
 /* Called "footer" cause the bar reuses the footer class */
