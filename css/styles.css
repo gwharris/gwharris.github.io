@@ -79,8 +79,8 @@ hr {
 
 /* Left column */
 .side {
-  -ms-flex: 20%; /* IE10 */
-  flex: 20%;
+  -ms-flex: 15%; /* IE10 */
+  flex: 15%;
   background-color: #DBE6E0;
   padding: 2%;
   padding-top: 10px;
