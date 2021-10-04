@@ -5,21 +5,12 @@
 
 /* Main body buttons */
 .buttons {
-  text-align: center;
+  text-align: left;
   color: black;
   background-color: #DBE6E0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  outline: 0px !important;
-  box-shadow: none !important;
-  border-radius: 5px;
-}
-.buttons.dark-theme {
-  text-align: center;
-  color: white;
-  background-color: rgb(0, 45, 0);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
   outline: 0px !important;
   box-shadow: none !important;
   border-radius: 5px;
@@ -31,66 +22,21 @@
   border: none;
   background-color: #DBE6E0;
   color: black;
-}
-.buttons.dark-theme button {
-  background-color: rgb(0, 45, 0);
-  color: white;
+  margin-right: 60px;
 }
 
 .buttons button:hover, button:active {
 	background-color: white;
-  border-radius: 8px;
-}
-.buttons.dark-theme button:hover {
-	background-color: black;
-  border-radius: 8px;
-}
-.buttons.dark-theme button:active {
-	background-color: black;
+  color: black;
   border-radius: 8px;
 }
 .buttons button:focus {
   outline: none;
   box-shadow: none;
   background-color: white;
-  border-radius: 8px;
-}
-.buttons.dark-theme button:focus {
-  outline: none;
-  box-shadow: none;
-  background-color: black;
+  color: black;
   border-radius: 8px;
 }
 
 /* --------------------------------------------------- */
-
-/* Buttons Style 2 */
-.buttons2 {
-  text-align: center;
-  color: inherit;
-  background-color: inherit;
-  padding-top: 30px;
-  outline: 0px !important;
-  box-shadow: none !important;
-  border-radius: 5px;
-}
-
-.buttons2 button {
-  font-size: 16px;
-  font-family: inherit;
-  border: none;
-  background-color: inherit;
-  color: inherit;
-}
-
-.buttons2 button:hover, button:active {
-	background-color: rgb(145, 145, 145);
-  border-radius: 8px;
-}
-.buttons2 button:focus {
-  outline: none;
-  box-shadow: none;
-  background-color: rgb(145, 145, 145);
-  border-radius: 8px;
-}
 
