@@ -13,6 +13,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet"><!-- font-family: 'Cabin Sketch', cursive; -->
   <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet"><!-- font-family: 'Vampiro One', cursive; -->
 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Quicksand&family=Roboto+Mono:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');  
+    /* font-family: 'Inter', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Ubuntu', sans-serif; */
+  </style>
+
   <!-- Favicon -->
   <link rel="icon" href="img/favicon2.ico">
 
@@ -47,20 +56,15 @@
 <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
 
-  <!-- Header -->
-  <!-- <section class="header">
-
-    <h1>Graham Harris</h1> -->
-
-    <!-- Code for typewriter taken from https://stackoverflow.com/questions/42144095/pausing-js-typewriter -->
-    <!-- <div class="type-wrap">
-      <h3 class="typewrite" style="padding: 20px" data-period="2000" data-type='["driven.", "enthusiastic.", "passionate.", "diligent."]'>
-        <span class="wrap"></span></h3>
-      </div> -->
-  <!-- </section> -->
-
-  <div class="footer" id="footer2" style="padding: 3px;">
-    <p style="text-align: right; padding-right: 10px;"><button onclick="toggleDark()">Toggle Dark Mode</button></p>
+  <div class="footer" id="header" style="padding: 3px; background-color: #DBE6E0;">
+    <div class="sticky" style="color: black;">
+      <section class="buttons" id="buttons">
+        <button onclick="press(0)">About Me</button>
+        <button onclick="press(1)">Work Experience</button>
+        <button onclick="press(2)">Extracurriculars</button>
+        <button onclick="press(3)">Projects</button>
+      </section>
+    </div>
   </div>
 
   <!-- Below Navbar -->
@@ -69,11 +73,13 @@
     <!-- Sidebar -->
     <section id="side" class="side">
 
+      <hr>
+
       <section id="info">
         <h2><b style="font-size: 115%">Contact:</b></h2>
         <p><b>929.244.0668</b></p>
         <p><b><a  href="mailto:graham.harris@nyu.edu">graham.harris@nyu.edu</a></b></p>
-        <p><b>New York, NY</b></p>
+        <p><b>Brooklyn, NY</b></p>
         <br>
       </section>
       
@@ -124,62 +130,20 @@
 
     <!-- Main body -->
     <section id="main" class="main">
-
-      <div class="sticky">
-        <section class="buttons" id="buttons">
-          <button onclick="aboutMe()">About Me</button>
-          <button onclick="workExp()">Work Experience</button>
-          <button onclick="school()">Extracurriculars</button>
-          <button onclick="certifications()">Certifications</button>
-          <button onclick="linksAndDocs()">Links & Documents</button>
-        </section>
-      </div>
-
-      <br>
       
       <section id="aboutMe" style="display: block;">
 
-        <p class="title"><b>Welcome! My name's Graham.</b></p>
-        <p><b>I'm a rising senior at NYU majoring in Computer Science and minoring in Math and Italian.</b></p>
+        <p class="title"><b>Welcome!</b></p>
+        <p>My name's Graham Harris. I'm an undergraduate senior at NYU at the Courant Institute of Mathematical Sciences.</p>
 
-        <p class="title"><b>Some projects I'm working on...</b></p>
+        <p>This website is under construction.</p>
 
-        <p>All code is available on <a href="https://github.com/gwharris" target="_blank">GitHub</a>.</p>
-
-        <p><b style="font-size: 115%">Network Analysis Project</b></p>
-        <ul>
-          <li>Created a behavioral network from event data for NYU’s Entrepreneurial Institute.</li>
-          <li>Presented findings to the department, analyzed data, and offered actionable change based on results of the investigation.</li>
-        </ul>
-
-        <p><b style="font-size: 115%">Movie Review Sentiment Analysis</b></p>
-        <ul>
-          <li>Calculated binary classification and logistic regression to determine sentiment for 50,000 IMDb movie reviews.</li>
-          <li>Used machine learning tools such as SciKit Learn, Jupyter Notebook, and NLTK to parse reviews and perform analysis.</li>
-        </ul>
-
-        <p><b style="font-size: 115%">Daily Tarot Bot</b></p>
-        <ul>
-          <li>Created a Twitter bot that tweets a tarot card once a day with meaningful advice.</li>
-          <li>Learned the Tweepy library, project scheduling, API handling, version control, and GitHub Actions flows.</li>
-        </ul>
-
-        <p><b style="font-size: 115%">“Unafraid” Game (<a href="https://gwharris.github.io/" target="_blank">Link</a>)</p>
-        <ul>
-          <li>Developed and scripted a “choose your own adventure” text game</li>
-          <li>Learned HTML, CSS, JavaScript, and GitHub Web Hosting services from scratch.</li>
-        </ul>
+        <p><b> If you have any questions, please reach out using one of the methods in the left column. I look forward to hearing from you!</b></p>
 
         <br>
+        <p><i>Last Update</i>: 10/04/2021</p>
 
         <p class="title"><b>My hobbies include...</b></p>
-
-        <p><b style="font-size: 115%">Coding: </b></p>
-        <ul>
-          <li>Areas of interest include: network analysis, natural language processing, machine learning, and agile workflows.</li>
-          <li>Experienced in both client- and server-side development.</li>
-          <li>Able to learn new languages and styles quickly.</li>
-        </ul>
 
         <p><b style="font-size: 115%">Horticulture: </b></p>
         <ul>
@@ -193,18 +157,32 @@
           <li>Lead a team of 50+ members in food-oriented event production and outreach to local restaurants.</li>
         </ul>
 
-        <p><b> If you have any questions, please reach out using one of the methods in the left column. I look forward to hearing from you!</b></p>
+        <p><b style="font-size: 115%">Coding: </b></p>
+        <ul>
+          <li>Areas of interest include: network analysis, natural language processing, machine learning, and agile workflows.</li>
+          <li>Experienced in both client- and server-side development.</li>
+          <li>Able to learn new languages and styles quickly.</li>
+        </ul>
+
+        <p><b style="font-size: 115%">Video Games: </b></p>
+        <ul>
+          <li>Avid video game player, primarily artistic/indie games.</li>
+          <li>Hobby game designer and developer.</li>
+          <li>Advocate for accessibility and diversity in gaming.</li>
+        </ul>
 
         <br>
       </section>
       <!-- -------------------- -->
       <section id="workExp" style="display: none;">
 
+        <p>** Click here for a <a href="resumes/Graham_Harris_Resume.pdf" target="_blank">PDF copy!</a></p>
+
         <p class="title"><b>Work Experience</b></p>
 
-        <h3>Data Analyst Intern, <a href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, New York NY, 4/2021 - Present</h3>
-        <h3> - Community Programs Intern, 9/2020 - 4/2021</h3>
-        <h3> - Intern, 9/2019 - 5/2020</h3>
+        <h3>Data Analyst Intern, <a href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, New York NY <span>4/2021 - Present</span><br>
+        - Community Programs Intern <span>9/2020 - 4/2021</span><br>
+        - Intern<span>9/2019 - 5/2020</span></h3>
 
         <p>NYU's Entrepreneurial Institute is a resource available to the NYU community for the purpose of starting up businesses. They offer several accelerators, "pitchfests," and other events, as well as workshops, trainings, and other resources.</p>
 
@@ -217,17 +195,17 @@
 
         <br>
 
-        <h3>Brand Ambassador, <a href="https://www.smorgasburg.com/" target="_blank">Smorgasburg</a>, New York NY, 4/2019 - 10/2019</h3>
+        <h3>Brand Ambassador, <a href="https://www.smorgasburg.com/" target="_blank">Smorgasburg</a>, New York NY <span>4/2019 - 10/2019</span></h3>
 
-        <p>Smorgasburg is the largest open-air food market in America, featuring over 100 vendor that cater to ~30,000 patrons every weekend.</p>
-
-        <br>
-
-        <h3>Office Assistant, <a href="https://www.law.nyu.edu/centers/judicial" target="_blank">NYU Law Institute of Judicial Administration (IJA) and Labor Center</a>, New York NY, 5/2019 - 8/2019</h3>
+        <p>Smorgasburg is the largest open-air food market in America, featuring over 100 vendors that cater to ~30,000 patrons every weekend.</p>
 
         <br>
 
-        <h3>Social Media Intern, <a href="https://foodperiod.com/" target="_blank">Food Period</a>, New York NY, 11/2018 - 6/2019</h3>
+        <h3>Office Assistant, <a href="https://www.law.nyu.edu/centers/judicial" target="_blank">NYU Law IJA and Labor Center</a>, New York NY<span>5/2019 - 8/2019</span></h3>
+
+        <br>
+
+        <h3>Social Media Intern, <a href="https://foodperiod.com/" target="_blank">Food Period</a>, New York NY<span>11/2018 - 6/2019</span></h3>
 
         <p>Food Period is a women's health startup focused on nutrition.</p>
 
@@ -243,8 +221,8 @@
 
         <p class="title"><b>Volunteering & Extracurriculars</b></p>
 
-        <h3>Mircrosoft TEALS Volunteer<br>
-        6/2021 - Present</h3>
+        <h3>Microsoft TEALS Volunteer
+        <span>6/2021 - Present</span></h3>
         <p>Provided high school students in AP Computer Science Principles with equitable access to computer science education. Microsoft's TEALS program is a philanthropic effort to give back to communities that may not have access to traditional Computer Science education.</p>
 
         <ul>
@@ -254,8 +232,8 @@
 
         <br>
 
-        <h3>"Clicks, Likes, and Tweets: Behavioral Addiction in the Digital Space" Class Volunteer<br>
-        1/2021 - 5/2021</h3>
+        <h3>"Clicks, Likes, and Tweets: Behavioral Addiction in the Digital Space"
+        <span>1/2021 - 5/2021</span></h3>
         <p>Reported directly under Dr. Argelinda Baroni of NYU Langone, gathering materials for Spring 2021 semester. Materials included academic research, practical examples, articles, and papers, with a specific focus on video game examples relating to behavioral addiction.</p>
 
         <ul>
@@ -264,9 +242,9 @@
 
         <br>
 
-        <h3><a href="https://www.biteclubnyu.com" target="_blank">Bite Club at NYU</a>, 8/2018-Present<br>
-          <strong>General Manager 4/2020 - present</strong><br>
-          <strong>Website Manager 4/2019 - Present</strong></h3>
+        <h3><a href="https://www.biteclubnyu.com" target="_blank">Bite Club at NYU</a><span>8/2018 - Present</span><br>
+        General Manager <span>4/2020 - present</span><br>
+        Website Manager <span>4/2019 - Present</span></h3>
 
         <p>Bite Club at NYU was officially founded in 2020. Previously, the club operated under the Spoon University brand, but split in 2019.</p>
 
@@ -280,7 +258,7 @@
 
         <br>
 
-        <h3>Puppy Raiser at <a href="https://www.seeingeye.org/" target="_blank">The Seeing Eye</a>, 5/2016 - 9/2019</h3>
+        <h3>Puppy Raiser at <a href="https://www.seeingeye.org/" target="_blank">The Seeing Eye</a> <span>5/2016 - 9/2019</span></h3>
 
         <p>The Seeing Eye's mission is to enhance the independence, dignity and self-confidence of people who are blind, through the use of specially trained dogs.</p>
 
@@ -289,66 +267,50 @@
         <br>
       </section>
       <!-- -------------------- -->
-      <section id="certifications" style="display: none;">
+      <section id="projects" style="display: none;">
 
-        <p class="title"><b>Certifications</b></p>
+        <p> ** All code is available on <a href="https://github.com/gwharris" target="_blank">GitHub</a>!</p>
 
-        <p>New York State Bartending Certificate - <a href="https://www.newyorkbartendingschool.com/" target="_blank">New York Bartending School</a>, January 2020</p>
+        <p class="title"><b>Projects</b></p>
+
+        <h3><b>Network Analysis Project</b></h3>
+        <ul>
+          <li>Created a behavioral network from event data for NYU’s Entrepreneurial Institute.</li>
+          <li>Developed adjacency data and network visualization to demonstrate trends in the data.</li>
+        </ul>
+        <p>Example graph:</p>
+        <img src="img/network_sample.png" style="height: 550px; display: block; margin-left: auto; margin-right: auto;">
+
+        <h3><b>Movie Review Sentiment Analysis</b></h3>
+        <ul>
+          <li>Calculated binary classification and logistic regression to determine sentiment for 50,000 IMDb movie reviews.</li>
+          <li>Used machine learning tools such as SciKit Learn, Jupyter Notebook, and NLTK to parse reviews and perform analysis.</li>
+        </ul>
+
+        <h3><b>Daily Tarot Bot</b></h3>
+        <ul>
+          <li>Created a Twitter bot that tweets a tarot card once a day with meaningful advice.</li>
+          <li>Learned the Tweepy library, project scheduling, API handling, version control, and GitHub Actions flows.</li>
+        </ul>
+
+        <h3><b>“Unafraid” Game (<a href="https://gwharris.github.io/" target="_blank">Site</a>)</b></h3>
+        <ul>
+          <li>Developed and scripted a “choose your own adventure” text game</li>
+          <li>Learned HTML, CSS, JavaScript, and GitHub Web Hosting services from scratch.</li>
+        </ul>
 
         <br>
-      </section>
-
-      <section id="linksAndDocs" class="documents" style="display: none; text-align: center">
-        
-        <p class="title"><b>Documents</b></p>
-
-        <h3>Resumes</h3>
-          <p><a href="resumes/Graham_Harris_Resume.pdf" target="_blank">Professional Resume</a></p>
-          <p><a href="resumes/Graham_Harris_Bartending.pdf" target="_blank">Bartending Resume</a></p>
-        <hr class="documents">
-
-        <h3>Writing Samples</h3>
-          <p><a href="samples/graham_harris_essay1.pdf" target="_blank">English Sample 1</a></p>
-          <p><a href="samples/graham_harris_essay2.pdf" target="_blank">English Sample 2</a></p>
-          <p><a href="samples/graham_harris_essay3.pdf" target="_blank">Scientific Sample</a></p>
-          <p><a href="samples/graham_harris_research_paper.pdf" target="_blank">Computer Science Research Sample</a></p>
-        <hr class="documents">
-
-        <br>
-        <p class="title"><b>Links</b></p>
-
-        <h3>Professional Media Profiles</h3>
-          <p><a  href="https://www.linkedin.com/in/graham-harris1" target="_blank">LinkedIn</a></p>
-          <p><a href="https://github.com/gwharris" target="_blank">GitHub</a></p>
-        <hr class="documents">
-
-        <h3>NYU Departments</h3>
-          <p><a href="https://cs.nyu.edu/home/index.html" target="_blank">Computer Science Dept.</a></p>
-          <p><a href="https://www.math.nyu.edu/dynamic/" target="_blank">Mathematics Dept.</a></p>
-          <p><a href="https://as.nyu.edu/content/nyu-as/as/departments/italian.html" target="_blank">Italian Dept.</a></p>
       </section>
     
     </section>
 
   </section>
 
-  <section id="header2" class="header" style="padding: 25px"> 
-  </section>
-
-  <!-- Footer -->
-  <section id="footer" class="footer">
-    <p> - <a href="#">Return to Top</a> - <br>
-      <br>
-      - Last updated: 09/30/2021 - </p>
-  </section>
-
 <!-- End body -->
 </body>
 
 <!-- Scripts -->
- <script type="text/javascript" src="scripts/typewriter.js"></script> 
  <script type="text/javascript" src="scripts/buttons.js"></script>
- <script type="text/javascript" src="scripts/darkMode.js"></script> 
 
  <!-- LinkedIn -->
  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
