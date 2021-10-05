@@ -1,179 +1,51 @@
 /* Graham Harris */
-/* styles.css - Formatting for website */
 
 /* --------------------------------------------------- */
 
 * {
   box-sizing: border-box;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 
 /* Body attributes */
 body {
-  font-family: 'Inconsolata';
-  margin: 0;
+  /* font-family: 'Inconsolata'; */
+  font-family: 'Roboto', sans-serif;
+  margin: 2.5%;
   /* cursor: url("../img/cursor2.png"), auto; */
 }
 
-hr {
-  height:2px;
-  border-width:0;
-  color:black;
-  background-color: black;
+/* --------------------------------------- */
+
+p {
+  margin-left: 2%;
+}
+
+a {
+  color: #698B69;
 }
 
 span {
   float: right; 
-  padding-right: 10px;
 }
 
-ul {
-  padding-bottom: 10px;
-}
-
-/* --------------------------------------- */
-
-/* Left column */
-/* Create two unequal columns that sit next to each other */
-.row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
+hr {
+  width: inherit;
 }
 
 /* --------------------------------------- */
 
-/* Left column */
-.side {
-  -ms-flex: 10%; /* IE10 */
-  flex: 10%;
-  background-color: #DBE6E0;
-  padding: 2%;
-  padding-top: 0%;
-}
-
-/* Side links */
-.side a {
-  color: #2F4F2F;
-}
-
-/* Line */
-hr.line {
-  border-color: black;
-  background-color: black;
-  border: none;
+.main {
+  margin: 5%;
+  margin-top: 2%;
 }
 
 /* --------------------------------------- */
 
-/* Main/right column */
-
-/* Section titles */
-.main p.title {
-  font-size: 30px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-bottom: 1em;
-}
-
-/* Indent the main text */
-.main p {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 1.5em;
-}
-
-.main ul {
-  list-style-type: circle;
-  color: black;
-  margin-left: 1em;
-}
-.main.dark-theme ul {
-  color: white;
-}
-
-/* Main column links */
-.main a {
-  color: #698B69;
-  text-decoration: underline; 
-}
-.main.dark-theme a {
-  color: #bad8c0;
-}
-.main a:hover, a:active {
-  text-decoration: none;
+/* Text format */
+.format1 {
+  font-size: large;
 }
 
 /* --------------------------------------- */
-
-/* Main settings */
-.main {   
-  -ms-flex: 80%; /* IE10 */
-  flex: 80%;
-  background-color: white;
-  padding: 5%;
-  padding-top: 20px;
-}
-
-/* --------------------------------------- */
-
-/* hr bar specifically for links & documents section */
-
-.documents hr {
-  height:2px;
-  border-width:0;
-  border: black;
-  width: 5%;
-}
-
-/* --------------------------------------- */
-
-/* Footer */
-
-.footer {
-  padding: 15px;
-  text-align: center;
-  background: #698B69;
-}
-
-.footer p,
-.footer a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-
-/* --------------------------------------- */
-
-/* Footer */
-.footer {
-  font-size: 14px;
-}
-
-/* Toggle dark mode button */
-/* Called "footer" cause the bar reuses the footer class */
-.footer button {
-  background-color: inherit;
-  border: none;
-  border-radius: 8px;
-  margin: auto;
-  color: white;
-  font-family: inherit;
-  outline: 0px !important;
-  box-shadow: none !important;
-}
-.footer button:hover, button:active {
-  text-decoration: underline;
-  color: white;
-}
-.footer button:focus {
-  color: white;
-}
-
-
 

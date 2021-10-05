@@ -1,7 +1,7 @@
-var a = document.getElementById("aboutMe");
-var b = document.getElementById("workExp");
-var c = document.getElementById("school");
-var d = document.getElementById("projects");
+var a = document.getElementById("about");
+var b = document.getElementById("project");
+var c = document.getElementById("work");
+var d = document.getElementById("volunteer");
 
 var arr = [a,b,c,d];
 

@@ -7,7 +7,6 @@
 
   <!-- FONTS   
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'> <!-- font-family: 'Inconsolata'; -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Quicksand&family=Roboto+Mono:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');  
     /* font-family: 'Inter', sans-serif;
@@ -16,6 +15,7 @@
       font-family: 'Source Sans Pro', sans-serif;
       font-family: 'Ubuntu', sans-serif; */
   </style>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'> <!-- font-family: 'Inconsolata'; -->
 
   <!-- Favicon -->
   <link rel="icon" href="img/favicon2.ico">
@@ -39,45 +39,63 @@
   </script>
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/screen.css">
-  <link rel="stylesheet" type="text/css" href="css/progressbar.css">
   <link rel="stylesheet" type="text/css" href="css/buttons.css">
+  <link rel="stylesheet" type="text/css" href="css/screen.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/progressbar.css">
 
 </head>
 <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
 
-  <div class="footer" id="header" style="padding: 3px; background-color: #DBE6E0;">
-    <div class="sticky" style="color: black;">
-      <section class="buttons" id="buttons">
-        <button onclick="press(0)">About Me</button>
-        <button onclick="press(1)">Work Experience</button>
-        <button onclick="press(2)">Extracurriculars</button>
-        <button onclick="press(3)">Projects</button>
-      </section>
-    </div>
-  </div>
+  <section id="header" class="buttons">
+    <button onclick="press(0)">Graham Harris</button>
+    <button onclick="press(1)">Projects</button>
+    <button onclick="press(2)">Resumé</button>
+    <button onclick="press(3)">Volunteer & Extracurricular</button>
+  </section>
 
-  <!-- Below Navbar -->
-  <section id="substance" class="row">
+  <br>
 
-    <!-- Sidebar -->
-    <section id="side" class="side">
+  <section id="main" class="main">
 
-      <hr>
+    <!-- Pages -->
 
-      <section id="info">
-        <h2><b style="font-size: 115%">Contact:</b></h2>
-        <p><b>929.244.0668</b></p>
-        <p><b><a  href="mailto:graham.harris@nyu.edu">graham.harris@nyu.edu</a></b></p>
-        <p><b><a href="https://www.linkedin.com/in/graham-harris1/" target="_blank">LinkedIn</a></b></p>
-        <p><b>Brooklyn, NY</b></p>
+    <section id="about" style="display: block;">
+      <!-- Main text -->
+      <div style="width: 75%; float:left; padding-left: 10px;">
+        <h2>Welcome!</h2>
+        <p>My name's Graham Harris. I'm an undergraduate senior at NYU at the Courant Institute of Mathematical Sciences.</p>
+
         <br>
-      </section>
-      
+
+        <p>Some blog posts I've written for NYU's Entrepreneurial Institute:</p>
+        <ul>
+          <li><a href="https://entrepreneur.nyu.edu/blog/2020/10/05/first-gen-talk-startup-journey-wayne-mackey-statespace-aim-lab/" target="_blank">First Gen. Talk: The Startup Journey with Wayne Mackey, Statespace (Aim Lab)</a></li>
+          <li><a target="_blank" href="https://entrepreneur.nyu.edu/blog/2021/03/15/funding-research-development/">Event Recap: Funding Your Research & Development</a></li>
+          <li><a target="_blank" href="https://entrepreneur.nyu.edu/blog/2020/10/13/nyu-startups-participate-posicovidity-innovation-challenge/">NYU Startups Participate in the Posicovidity Innovation Challenge</a></li>
+        </ul>
+
+        <br>
+
+        <p>This website is under construction. Come back later for updates!</p>
+
+        <br>
+        <p><i>Last Update</i>: 10/04/2021</p>
+
+        <br>
+        <hr>
+
+        <h1>Contact:</h1>
+        <p>929.244.0668</p>
+        <p>graham.harris@nyu.edu</p>
+        <p><a href="https://github.com/gwharris" target="_blank">github.com/gwharris</a></p>
+        <p><a href="https://www.linkedin.com/in/graham-harris1/" target="_blank">LinkedIn</a></p>
+        <p>Brooklyn, NY</p>
+      </div>
+
       <!-- Programming proficiencies -->
-      <section id="proficiencies">
+      <div class="bar">
         <h3><b style="font-size: 120%">Programming Proficiencies</b></h3>
         <p>Java</p>
         <div class="container">
@@ -117,165 +135,15 @@
         </div>
         <p>Find me on <a href="https://github.com/gwharris" target="_blank">GitHub</a>!</p>
         <br>
-      </section>
-      
+      </div>
     </section>
 
-    <!-- Main body -->
-    <section id="main" class="main">
-      
-      <section id="aboutMe" style="display: block;">
+    <section id="project" style="display: none; margin-right: 15%;">
+      <p style="margin: 0%;"> ** All code is available on <a href="https://github.com/gwharris" target="_blank">GitHub</a>!</p>
 
-        <p class="title"><b>Welcome!</b></p>
-        <p>My name's Graham Harris. I'm an undergraduate senior at NYU at the Courant Institute of Mathematical Sciences.</p>
+      <h2><b>Projects:</b></h2>
 
-        <p>Some blog posts I've written for NYU's Entrepreneurial Institute:</p>
-        <ul>
-          <li><a href="https://entrepreneur.nyu.edu/blog/2020/10/05/first-gen-talk-startup-journey-wayne-mackey-statespace-aim-lab/" target="_blank">First Gen. Talk: The Startup Journey with Wayne Mackey, Statespace (Aim Lab)</a></li>
-          <li><a target="_blank" href="https://entrepreneur.nyu.edu/blog/2021/03/15/funding-research-development/">Event Recap: Funding Your Research & Development</a></li>
-          <li><a target="_blank" href="https://entrepreneur.nyu.edu/blog/2020/10/13/nyu-startups-participate-posicovidity-innovation-challenge/">NYU Startups Participate in the Posicovidity Innovation Challenge</a></li>
-        </ul>
-
-        <br>
-
-        <p>This website is under construction.</p>
-
-        <p><b> If you have any questions, please reach out using one of the methods in the left column. I look forward to hearing from you!</b></p>
-
-        <br>
-        <p><i>Last Update</i>: 10/04/2021</p>
-
-        <p class="title"><b>My hobbies include...</b></p>
-
-        <p><b style="font-size: 115%">Horticulture: </b></p>
-        <ul>
-          <li>Hobby horticulturist and home gardener.</li>
-          <li>Interested in urban greenspaces, agritech, and green interior design.</li>
-        </ul>
-
-        <p><b style="font-size: 115%">Food: </b></p>
-        <ul>
-          <li>Founded and managed an NYU gastronomy club called <a href="#school">Bite Club</a>.</li>
-          <li>Lead a team of 50+ members in food-oriented event production and outreach to local restaurants.</li>
-        </ul>
-
-        <p><b style="font-size: 115%">Coding: </b></p>
-        <ul>
-          <li>Areas of interest include: network analysis, natural language processing, machine learning, and agile workflows.</li>
-          <li>Experienced in both client- and server-side development.</li>
-          <li>Able to learn new languages and styles quickly.</li>
-        </ul>
-
-        <p><b style="font-size: 115%">Video Games: </b></p>
-        <ul>
-          <li>Avid video game player, primarily artistic/indie games.</li>
-          <li>Hobby game designer and developer.</li>
-          <li>Advocate for accessibility and diversity in gaming.</li>
-        </ul>
-
-        <br>
-      </section>
-      <!-- -------------------- -->
-      <section id="workExp" style="display: none;">
-
-        <p>** Click here for a <a href="resumes/Graham_Harris_Resume.pdf" target="_blank">PDF copy!</a></p>
-
-        <p class="title"><b>Work Experience</b></p>
-
-        <h3>Data Analyst Intern, <a href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, New York NY <span>4/2021 - Present</span><br>
-        - Community Programs Intern <span>9/2020 - 4/2021</span><br>
-        - Intern<span>9/2019 - 5/2020</span></h3>
-
-        <p>NYU's Entrepreneurial Institute is a resource available to the NYU community for the purpose of starting up businesses. They offer several accelerators, "pitchfests," and other events, as well as workshops, trainings, and other resources.</p>
-
-        <ul>
-          <li>Analyzed aggregate data from Institute events and created a behavioral network.</li>
-          <li>Completed frequent project check-ins, several interim assignments, and a final project report.</li>
-          <li>Facilitated entrepreneurship events, such as start-up incubators and venture capital “pitchfests”.</li>
-          <li>Delivered weekly “How to Start a Startup” presentations, an hour-long event that clarified startup resources to members of the NYU community.</li>
-        </ul>
-
-        <br>
-
-        <h3>Brand Ambassador, <a href="https://www.smorgasburg.com/" target="_blank">Smorgasburg</a>, New York NY <span>4/2019 - 10/2019</span></h3>
-
-        <p>Smorgasburg is the largest open-air food market in America, featuring over 100 vendors that cater to ~30,000 patrons every weekend.</p>
-
-        <br>
-
-        <h3>Office Assistant, <a href="https://www.law.nyu.edu/centers/judicial" target="_blank">NYU Law IJA and Labor Center</a>, New York NY<span>5/2019 - 8/2019</span></h3>
-
-        <br>
-
-        <h3>Social Media Intern, <a href="https://foodperiod.com/" target="_blank">Food Period</a>, New York NY<span>11/2018 - 6/2019</span></h3>
-
-        <p>Food Period is a women's health startup focused on nutrition.</p>
-
-        <ul>
-          <li>Documented Instagram data and planned social content for women’s health startup.</li>
-          <li>Developed analysis tasks that resulted in Instagram growth of ~300 followers/week.</li>
-        </ul>
-
-        <br>
-      </section>
-      <!-- -------------------- -->
-      <section id="school" style="display: none;">
-
-        <p class="title"><b>Volunteering & Extracurriculars</b></p>
-
-        <h3>Microsoft TEALS Volunteer
-        <span>6/2021 - Present</span></h3>
-        <p>Provided high school students in AP Computer Science Principles with equitable access to computer science education. Microsoft's TEALS program is a philanthropic effort to give back to communities that may not have access to traditional Computer Science education.</p>
-
-        <ul>
-          <li>Organized lectures, curriculum, and classroom materials.</li>
-          <li>Attended Microsoft education and diversity trainings.</li>
-        </ul>
-
-        <br>
-
-        <h3>"Clicks, Likes, and Tweets: Behavioral Addiction in the Digital Space"
-        <span>1/2021 - 5/2021</span></h3>
-        <p>Reported directly under Dr. Argelinda Baroni of NYU Langone, gathering materials for Spring 2021 semester. Materials included academic research, practical examples, articles, and papers, with a specific focus on video game examples relating to behavioral addiction.</p>
-
-        <ul>
-          <li>Lectured a class of 70 students on the impact of playing video games in the context of behavioral addiction.</li>
-        </ul>
-
-        <br>
-
-        <h3><a href="https://www.biteclubnyu.com" target="_blank">Bite Club at NYU</a><span>8/2018 - Present</span><br>
-        General Manager <span>4/2020 - present</span><br>
-        Website Manager <span>4/2019 - Present</span></h3>
-
-        <p>Bite Club at NYU was officially founded in 2020. Previously, the club operated under the Spoon University brand, but split in 2019.</p>
-
-        <p>Our mission at Bite Club is to make food topics more accessible to the NYU community and to empower our staff. Bite Club has three main pillars: journalism, social media, and marketing.</p>
-
-        <ul> 
-         <li>Editorial - The editorial team writes about restaurants, recipes, current events in the food industry.</li>
-         <li>Social - On the Bite Club instagram (<a href="https://www.instagram.com/biteclubnyu/?hl=en" target="_blank">@biteclubnyu</a>), we post pictures of whatever our staff is eating. We feature our sponsors first and foremost, but also love to display our staff's creations!</li>
-         <li>Marketing - In exchange for product, our team posts to the aforementioned instagram page. We then distribute the product and promotional materials to NYU students through club events.</li>
-        </ul>
-
-        <br>
-
-        <h3>Puppy Raiser at <a href="https://www.seeingeye.org/" target="_blank">The Seeing Eye</a> <span>5/2016 - 9/2019</span></h3>
-
-        <p>The Seeing Eye's mission is to enhance the independence, dignity and self-confidence of people who are blind, through the use of specially trained dogs.</p>
-
-        <p>Families who raise Seeing Eye dogs housebreak, socialize, and train the dogs for anywhere between a year to a year-and-a-half. The dogs are then formally trained at a professional facility in Morristown NJ and matched with a recipient.</p>
-
-        <br>
-      </section>
-      <!-- -------------------- -->
-      <section id="projects" style="display: none;">
-
-        <p> ** All code is available on <a href="https://github.com/gwharris" target="_blank">GitHub</a>!</p>
-
-        <p class="title"><b>Projects</b></p>
-
-        <h3><b>Network Analysis Project</b></h3>
+      <h3><b>Network Analysis Project</b></h3>
         <ul>
           <li>Created a behavioral network from event data for NYU’s Entrepreneurial Institute.</li>
           <li>Developed adjacency data and network visualization to demonstrate trends in the data.</li>
@@ -283,39 +151,118 @@
         <p>Example graph:</p>
         <img src="img/network_sample.png" style="height: 550px; display: block; margin-left: auto; margin-right: auto;">
 
-        <h3><b>Movie Review Sentiment Analysis</b></h3>
+      <h3><b>Movie Review Sentiment Analysis</b></h3>
         <ul>
           <li>Calculated binary classification and logistic regression to determine sentiment for 50,000 IMDb movie reviews.</li>
           <li>Used machine learning tools such as SciKit Learn, Jupyter Notebook, and NLTK to parse reviews and perform analysis.</li>
         </ul>
 
-        <h3><b>Daily Tarot Bot</b></h3>
+      <h3><b>Daily Tarot Bot</b></h3>
         <ul>
           <li>Created a Twitter bot that tweets a tarot card once a day with meaningful advice.</li>
           <li>Learned the Tweepy library, project scheduling, API handling, version control, and GitHub Actions flows.</li>
         </ul>
 
-        <h3><b>“Unafraid” Game (<a href="https://gwharris.github.io/" target="_blank">Site</a>)</b></h3>
+      <h3><b>“Unafraid” Game (<a href="https://gwharris.github.io/" target="_blank">Site</a>)</b></h3>
         <ul>
           <li>Developed and scripted a “choose your own adventure” text game</li>
           <li>Learned HTML, CSS, JavaScript, and GitHub Web Hosting services from scratch.</li>
         </ul>
 
-        <br>
-      </section>
-    
+    </section>
+
+    <section id="work" style="display: none; margin-right: 15%;">
+      <p style="margin: 0%;">** Click here for a <a href="resumes/Graham_Harris_Resume.pdf" target="_blank">PDF copy!</a></p>
+
+      <h2><b>Education:</b></h2>
+      <h3>New York University, <i>New York, NY</i> 
+        <span>Aug. 2018 - May 2022</span> </h3>
+      <p>Major: Computer Science</p>
+      <p>Minors: Mathematics, Italian Studies</p>
+      <p>Academic Memberships: Tech@NYU, NYU Entrepreneurs Network, Bite Club at NYU</p>
+      <p>Societies: LGBTQ+ in Tech, Botmakers</p>
+      <p>Coding Languages: Python, Java, JavaScript, CSS, HTML, C/C++</p>
+
+      <br>
+      <hr>
+
+      <h2><b>Work Experience:</b></h2>
+
+      <h3>Data Analyst Intern, <a href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, <i>New York NY</i> <span>Apr. 2021 - Present</span><br>
+      Community Programs Intern <span>Sep. 2020 - Apr. 2021</span><br>
+      Intern <span>Sep. 2019 - May 2020</span></h3>
+
+      <ul>
+        <li>Analyzed aggregate data from Institute events and created a behavioral network.</li>
+        <li>Completed frequent project check-ins, several interim assignments, and a final project report.</li>
+        <li>Facilitated entrepreneurship events, such as start-up incubators and venture capital “pitchfests”.</li>
+        <li>Delivered weekly “How to Start a Startup” presentations, an hour-long event that clarified startup resources to members of the NYU community.</li>
+      </ul>
+
+      <br>
+
+      <h3>Brand Ambassador, <a href="https://www.smorgasburg.com/" target="_blank">Smorgasburg</a>, <i>New York NY</i> <span>Apr. 2019 - Oct. 2019</span></h3>
+
+      <p>Smorgasburg is the largest open-air food market in America, featuring over 100 vendors that cater to ~30,000 patrons every weekend.</p>
+
+      <br>
+
+      <h3>Office Assistant, <a href="https://www.law.nyu.edu/centers/judicial" target="_blank">NYU Law IJA and Labor Center</a>, <i>New York NY</i> <span>May 2019 - Aug. 2019</span></h3>
+
+      <br>
+
+      <h3>Social Media Intern, <a href="https://foodperiod.com/" target="_blank">Food Period</a>, <i>New York NY</i> <span>Nov. 2018 - Jun. 2019</span></h3>
+
+      <p>Food Period is a women's health startup that makes functional food products.</p>
+
+      <ul>
+        <li>Documented Instagram data and planned social content for women’s health startup.</li>
+        <li>Developed analysis tasks that resulted in Instagram growth of ~300 followers/week.</li>
+      </ul>
+
+    </section>
+
+    <section id="volunteer" style="display: none; margin-right: 15%;">
+      <h2><b>Volunteering & Extracurriculars</b></h2>
+
+      <h3><a target="_blank" href="https://www.microsoft.com/en-us/teals">Microsoft TEALS</a> Volunteer, <i>New York NY</i> 
+        <span>Jun. 2021 - Present</span>
+      </h3>
+      <p>Provided high school students in AP Computer Science Principles with equitable access to computer science education. Microsoft's TEALS program is a philanthropic effort to give back to communities that may not have access to traditional Computer Science education.</p>
+
+      <br>
+
+      <h3>"Clicks, Likes, and Tweets: Behavioral Addiction in the Digital Space" Class Volunteer
+        <span>Jan. 2021 - May 2021</span>
+      </h3>
+      <p>Reported directly under Dr. Argelinda Baroni of NYU Langone, gathering materials for Spring 2021 semester. Materials included academic research, practical examples, articles, and papers, with a specific focus on video game examples relating to behavioral addiction.</p>
+
+      <br>
+
+      <h3><a href="https://www.biteclubnyu.com" target="_blank">Bite Club at NYU</a> Member <span>Aug. 2018 - Present</span><br>
+      Website Manager <span>Apr. 2019 - Present</span><br>
+      General Manager <span>Apr. 2020 - Present</span></h3>
+
+      <p>Our mission at Bite Club is to make food topics more accessible to the NYU community and to empower our staff. Bite Club has three main pillars: journalism, social media, and marketing.</p>
+
+      <br>
+
+      <h3>Puppy Raiser at <a href="https://www.seeingeye.org/" target="_blank">The Seeing Eye</a>, <i>Morristown NJ</i>  <span>May 2016 - Sep. 2019</span>
+      </h3>
+
+      <p>The Seeing Eye's mission is to enhance the independence, dignity and self-confidence of people who are blind, through the use of specially trained dogs.</p>
+
+      <p>Families who raise Seeing Eye dogs housebreak, socialize, and train the dogs for anywhere between a year to a year-and-a-half. The dogs are then formally trained at a professional facility in Morristown NJ and matched with a recipient.</p>
+
+      <br>
     </section>
 
   </section>
 
-<!-- End body -->
 </body>
 
-<!-- Scripts -->
- <script type="text/javascript" src="scripts/buttons.js"></script>
-
- <!-- LinkedIn -->
- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <!-- Scripts -->
+  <script type="text/javascript" src="scripts/buttons.js"></script>
 
 </html>
 

@@ -5,7 +5,6 @@
 /* --------------------------------------------------- */
 
 .container {
-
   height: 25px;
   position: relative;
 }
@@ -26,13 +25,22 @@
   transition-property: width, background-color;
   text-align: left;
   padding-left: 5px;
-  font-size: 95%
+  font-size: 85%
 }
 
 .progress-moved .progress-bar2 {
   width: 85%; 
   background-color: white;  
   animation: progressAnimation 6s;
+}
+
+.bar {
+  width: 20%; 
+  float:right; 
+  text-align: right; 
+  padding: 15px;
+  background-color: #DBE6E0;
+  border-radius: 10px;
 }
 
 /* If you want to animate the progress bar: */
