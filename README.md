@@ -8,7 +8,7 @@ Basic template from W3 Schools, with heavy modification.<br>
 
 ## Languages
 This website is written in:
-* JavaScript
+* Vanilla JavaScript
 * HTML/CSS
 
 
