@@ -4,3 +4,6 @@ tests
 text
 .htaccess
 .git
+
+# Tests
+indexTest.html
