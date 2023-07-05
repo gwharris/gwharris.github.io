@@ -58,3 +58,7 @@ p, ul {
 
 /* --------------------------------------- */
 
+/* Add bullet point padding to resume portion */
+.resume {
+  padding-left: 10px;
+}

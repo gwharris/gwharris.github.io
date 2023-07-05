@@ -51,8 +51,7 @@
   <section id="header" class="buttons">
     <button onclick="press(0)">About Me</button>
     <button onclick="press(1)">Projects</button>
-    <button onclick="press(2)">Resumé</button>
-    <button onclick="press(3)">Volunteer & Extracurricular</button>
+    <button onclick="press(2)">Volunteer</button>
   </section>
 
   <br>
@@ -61,22 +60,85 @@
 
     <!-- Pages -->
 
-    <section id="about" style="display: block;">
+    <section id="about" style="display: block; margin-right: 10%;">
       <!-- Main text -->
-      <div style="width: 75%; float:left; padding-left: 10px;">
+      <div style="width: 95%; float:left; padding-left: 10px;  padding-top: 2vw">
         <h1>Welcome!</h1>
-        <div style="width: 60%; float:left; padding-left: 10px;">
+        <div style="width: 60%; float:left; padding-left: 10px; padding-top: 1vw;">
           <p>My name's <b style="color: #698B69">Graham Harris</b>. I'm a consultant at Capgemini US working in NYC. In my spare time, I'm a hobby horticulturist, video game enthusiast, and amateur chef.</p>
           <p>My work experience is defined by my passion for management and organization. My time as a Scrum master (technical manager) at Capgemini helped develop my communications skills, which I look forward to using in a new role. In college, I worked in the startup atmosphere at NYU for about three years, during which I became a self-driven, solutions-oriented problem solver. </p>
-          <p style="padding-bottom: 20px;">Page last updated July 5th 2023.</p>
 
         </div>
-        <div style="width: 40%; float:right; height: inherit;">
-          <img src="img/me4.jpg" style="height: 270px; display: block; margin-left: auto; margin-right: auto; border-radius: 135px;">
+        <div style="width: auto; float:right; height: auto;">
+          <img src="img/me4.jpg" style="height: 25vw; max-height: 400px; display: 
+          block; margin-left: auto; margin-right: auto; 
+          border-radius: 145px;  padding-bottom: 2vw;">
         </div>
 
         <br>
       
+        <br><hr><br>
+
+        <h1><b><u>Resume</u></b></h1>
+
+        <p><b>Objective</b>: Tech project manager seeking new role in management or communications. Open to a wide
+          range of positions, including (but not limited to) executive assisting, 
+          project management, business analysis, and event programming.
+        </p>
+
+        <h1 style="font-size: 160%;"><b><u>Work Experience</u></b></h1>
+
+        <h3>Tech Consultant, Capgemini US, <i>New York NY</i> <span>June 2022 - Present</span></h3>
+        <ul>
+          <li><i>Certifications</i>: PMS1 Scrum Master, AZ-900 Microsoft Azure Fundamentals</li>
+        </ul>
+        <h3>Scrum Master (project at Capgemini) <span>Aug. 2022 - Mar. 2023</span></h3>
+        <ul>
+          <li>Facilitated Scrum (project management) practices for client's machine learning team, including scheduling, goal-setting, collaboration, and documentation.</li>
+          <li>Microsoft Azure DevOps Dashboards, Queries, Roadmaps, etc. in accordance with team needs.</li>
+          <li>Calculated and analyzed sprint metrics such as velocity and accuracy.</li>
+          <li>Removed impediments to team progress.</li>
+        </ul>
+        
+        <br>
+
+        <h3>Data Analyst Intern, <a href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, <i>New York NY</i> <span>Apr. 2021 - May 2022</span><br>
+        Community Programs Intern<span>Sep. 2020 - Apr. 2021</span><br>
+        Intern<span>Sep. 2019 - May 2020</span></h3>
+
+        <ul>
+          <li>Analyzed aggregate data from Institute events and created a behavioral network.</li>
+          <li>Completed frequent project check-ins, several interim assignments, and a final project report.</li>
+          <li>Facilitated entrepreneurship events, such as start-up incubators and venture capital “pitchfests”.</li>
+          <li>Delivered weekly “How to Start a Startup” presentations, an hour-long event that clarified startup resources to members of the NYU community.</li>
+        </ul>
+
+        <br>
+
+        <h3>Brand Ambassador, <a href="https://www.smorgasburg.com/" target="_blank">Smorgasburg</a>, <i>New York NY</i> <span>Apr. 2019 - Oct. 2019</span></h3>
+
+        <br>
+
+        <h3>Office Assistant, <a href="https://www.law.nyu.edu/centers/judicial" target="_blank">NYU Law IJA and Labor Center</a>, <i>New York NY</i> <span>May 2019 - Aug. 2019</span></h3>
+
+        <br>
+
+        <h3>Social Media Intern, <a href="https://foodperiod.com/" target="_blank">Food Period</a>, <i>New York NY</i> <span>Nov. 2018 - Jun. 2019</span></h3>
+
+        <ul>
+          <li>Documented Instagram data and planned social content for women’s health startup.</li>
+          <li>Developed analysis tasks that resulted in Instagram growth of ~300 followers/week.</li>
+        </ul>
+
+        <h1 style="font-size: 160%;"><b><u>Education</u></b></h1>
+        <h3>New York University, <i>New York, NY</i> 
+        <span>Aug. 2018 - May 2022</span> </h3>
+        <p><b>Major:</b> Computer Science</p>
+        <p><b>Minors:</b> Mathematics, Italian Studies</p>
+        <p>Academic Memberships: Tech@NYU, NYU Entrepreneurs Network, Bite Club at NYU</p>
+        <p>Societies: LGBTQ+ in Tech, Botmakers</p>
+        <p>Coding Languages: Python, Java, JavaScript, CSS, HTML, C/C++</p>
+
         <br><hr><br>
 
         <h1>Contact:</h1>
@@ -85,49 +147,7 @@
         <p><a href="https://github.com/gwharris" target="_blank">GitHub</a></p>
         <p><a href="https://www.linkedin.com/in/graham-harris1/" target="_blank">LinkedIn</a></p>
         <p>Brooklyn, NY</p>
-      </div>
-
-      <!-- Programming proficiencies -->
-      <div class="bar">
-        <h3><b style="font-size: 120%">Programming Proficiencies</b></h3>
-        <p>Python</p>
-        <div class="container">
-          <div class="progress2 progress-moved">
-            <div class="progress-bar2" style="width: 80%">80%</div>
-          </div>
-        </div>
-        <p>Java</p>
-        <div class="container">
-          <div class="progress2 progress-moved">
-            <div class="progress-bar2" style="width: 75%">75%</div>
-          </div>
-        </div>
-        <p>HTML</p>
-        <div class="container">
-          <div class="progress2 progress-moved">
-            <div class="progress-bar2" style="width: 70%">70%</div>
-          </div>
-        </div>
-        <p>CSS</p>
-        <div class="container">
-          <div class="progress2 progress-moved">
-            <div class="progress-bar2" style="width: 60%">60%</div>
-          </div>
-        </div>
-        <p>JavaScript</p>
-        <div class="container">
-          <div class="progress2 progress-moved">
-            <div class="progress-bar2" style="width: 60%">60%</div>
-          </div>
-        </div>
-        <p>C/C#/C++</p>
-        <div class="container">
-          <div class="progress2 progress-moved">
-            <div class="progress-bar2" style="width: 50%">50%</div>
-          </div>
-        </div>
-        <p>Find me on <a href="https://github.com/gwharris" target="_blank">GitHub</a>!</p>
-        <br>
+        <p style="padding-bottom: 20px;">Page last updated July 5th 2023.</p>
       </div>
     </section>
 
@@ -156,7 +176,7 @@
 
       <br>
 
-      <h3><b>Daily Tarot Bot (<a href="https://twitter.com/daily_tarotbot" target="_blank">Twitter</a>) (<a href="https://github.com/gwharris/tarotBot" target="_blank">Code</a>)</b></h3>
+      <h3><b>Daily Tarot Bot (not currently operational)</b></h3>
         <ul>
           <li>Created a Twitter bot that tweets a tarot card once a day with meaningful advice.</li>
           <li>Learned the Tweepy library, project scheduling, API handling, version control, and GitHub Actions flows.</li>
@@ -182,80 +202,8 @@
 
     </section>
 
-    <section id="work" style="display: none; margin-right: 10%;">
-      <p style="margin: 0%;">** Click here for a <a href="resumes/Graham_Harris_Resume.pdf" target="_blank">PDF copy!</a> Last updated April 2023.</p>
-
-      <h1><b>Education:</b></h1>
-      <h3>New York University, <i>New York, NY</i> 
-        <span>Aug. 2018 - May 2022</span> </h3>
-      <p><b>Major:</b> Computer Science</p>
-      <p><b>Minors:</b> Mathematics, Italian Studies</p>
-      <p>Academic Memberships: Tech@NYU, NYU Entrepreneurs Network, Bite Club at NYU</p>
-      <p>Societies: LGBTQ+ in Tech, Botmakers</p>
-      <p>Coding Languages: Python, Java, JavaScript, CSS, HTML, C/C++</p>
-
-      <br>
-      <hr>
-
-      <h1><b>Work Experience:</b></h1>
-
-      <h3>Tech Consultant, Capgemini US, <i>New York NY</i> <span>June 2022 - Present</span></h3>
-      <ul>
-        <li><i>Certifications</i>: PMS1 Scrum Master, AZ-900 Microsoft Azure Fundamentals</li>
-      </ul>
-      <h3>Scrum Master (project at Capgemini) <span>Aug. 2022 - Mar. 2023</span></h3>
-      <ul>
-        <li>Facilitated Scrum (project management) practices for client's machine learning team, including scheduling, goal-setting, collaboration, and documentation.</li>
-        <li>Microsoft Azure DevOps Dashboards, Queries, Roadmaps, etc. in accordance with team needs.</li>
-        <li>Calculated and analyzed sprint metrics such as velocity and accuracy.</li>
-        <li>Removed impediments to team progress.</li>
-      </ul>
-        
-      <br>
-
-      <h3>Data Analyst Intern, <a href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, <i>New York NY</i> <span>Apr. 2021 - May 2022</span><br>
-      Community Programs Intern<span>Sep. 2020 - Apr. 2021</span><br>
-      Intern<span>Sep. 2019 - May 2020</span></h3>
-
-      <ul>
-        <li>Analyzed aggregate data from Institute events and created a behavioral network.</li>
-        <li>Completed frequent project check-ins, several interim assignments, and a final project report.</li>
-        <li>Facilitated entrepreneurship events, such as start-up incubators and venture capital “pitchfests”.</li>
-        <li>Delivered weekly “How to Start a Startup” presentations, an hour-long event that clarified startup resources to members of the NYU community.</li>
-      </ul>
-
-      <br>
-
-      <h3>Brand Ambassador, <a href="https://www.smorgasburg.com/" target="_blank">Smorgasburg</a>, <i>New York NY</i> <span>Apr. 2019 - Oct. 2019</span></h3>
-
-      <p>Smorgasburg is the largest open-air food market in America, featuring over 100 vendors that cater to ~30,000 patrons every weekend.</p>
-
-      <br>
-
-      <h3>Office Assistant, <a href="https://www.law.nyu.edu/centers/judicial" target="_blank">NYU Law IJA and Labor Center</a>, <i>New York NY</i> <span>May 2019 - Aug. 2019</span></h3>
-
-      <br>
-
-      <h3>Social Media Intern, <a href="https://foodperiod.com/" target="_blank">Food Period</a>, <i>New York NY</i> <span>Nov. 2018 - Jun. 2019</span></h3>
-
-      <ul>
-        <li>Documented Instagram data and planned social content for women’s health startup.</li>
-        <li>Developed analysis tasks that resulted in Instagram growth of ~300 followers/week.</li>
-      </ul>
-
-      <br><hr><br>
-
-      <h1>Contact:</h1>
-      <p>929.244.0668</p>
-      <p>grahamh1019@gmail.com</p>
-      <p><a href="https://github.com/gwharris" target="_blank">GitHub</a></p>
-      <p><a href="https://www.linkedin.com/in/graham-harris1/" target="_blank">LinkedIn</a></p>
-      <p>Brooklyn, NY</p>
-
-    </section>
-
     <section id="volunteer" style="display: none; margin-right: 10%;">
-      <h1><b>Volunteering & Extracurriculars</b></h1>
+      <h1><b>Volunteering & College Extracurriculars</b></h1>
 
       <h3><a target="_blank" href="https://www.microsoft.com/en-us/teals">Microsoft TEALS</a> Volunteer, <i>New York NY</i> 
         <span>Jun. 2021 - Present</span>
@@ -274,9 +222,7 @@
       <h3><a href="https://www.biteclubnyu.com" target="_blank">Bite Club at NYU</a> Member <span>Aug. 2018 - Present</span><br>
       Website Manager <span>Apr. 2019 - Present</span><br>
       General Manager <span>Apr. 2020 - Present</span></h3>
-
-      <p>Our mission at Bite Club is to make food topics more accessible to the NYU community and to empower our staff. Bite Club has three main pillars: journalism, social media, and marketing.</p>
-
+      
       <br>
 
       <h3>Puppy Raiser at <a href="https://www.seeingeye.org/" target="_blank">The Seeing Eye</a>, <i>Morristown NJ</i>  <span>May 2016 - Sep. 2019</span>
