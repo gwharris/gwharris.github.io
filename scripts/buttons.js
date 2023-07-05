@@ -1,9 +1,8 @@
 var a = document.getElementById("about");
 var b = document.getElementById("project");
-var c = document.getElementById("work");
-var d = document.getElementById("volunteer");
+var c = document.getElementById("volunteer");
 
-var arr = [a,b,c,d];
+var arr = [a,b,c];
 
 function loop(index) {
 	for (i=0; i<arr.length;i++) {
