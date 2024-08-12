@@ -35,6 +35,8 @@ hr {
 
 h1 {
   font-size: 200%;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 p, ul {
