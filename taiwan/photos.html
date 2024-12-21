@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<head>
+    <title>Display Images from Array</title>
+</head>
+
+<body>
+    <h1><u>Taiwan</u></h1>
+
+    <img src="img/img_1.jpg">
+    
+    <div id="image-container"></div>
+    
+    <script>
+            for (let i = 1; i < 425; i++) {
+                var elem = document.createElement("img");
+                var imgname = "img/img_" + i.toString() + ".jpg"
+                elem.src = imgname
+                elem.alt = "test"
+                document.getElementById("image-container").appendChild(elem);
+            }
+        
+    </script>
+</body>
+
+</html>

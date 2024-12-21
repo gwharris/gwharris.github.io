@@ -1,0 +1,23 @@
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+}
+
+img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8%;
+  border: 5px solid black;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media screen and (max-device-width: 1366px) {
+  .header {
+    background-attachment: scroll;
+  }
+}
+
+  
