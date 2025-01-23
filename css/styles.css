@@ -64,3 +64,38 @@ p, ul {
 .resume {
   padding-left: 10px;
 }
+
+/* Pottery grid 
+https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
+*/
+.gallery {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  
+  -webkit-column-count: 4;
+  -webkit-column-gap:   10px;
+  -moz-column-count:    4;
+  -moz-column-gap:      10px;
+  column-count:         4;
+  column-gap:           10px;
+  float: auto;
+}
+
+.gallery img {
+ /* Just in case there are inline attributes */
+ width: auto;
+ max-width: 200px;
+ overflow: clip;
+ image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+ image-rendering: -moz-crisp-edges;          /* Firefox                        */
+ image-rendering: -o-crisp-edges;            /* Opera                          */
+ image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+ image-rendering: pixelated;                 /* Universal support since 2021   */
+ image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+ -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+ text-align: center;
+ display: block;
+}
+
+
+
