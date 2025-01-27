@@ -84,7 +84,7 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
 .gallery img {
  /* Just in case there are inline attributes */
  width: auto;
- max-width: 200px;
+ max-width: 230px;
  overflow: clip;
  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
  image-rendering: -moz-crisp-edges;          /* Firefox                        */
