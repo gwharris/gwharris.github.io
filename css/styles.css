@@ -97,5 +97,24 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
  display: block;
 }
 
+/* for mobile */
+@media (max-width: 400px) {
+  .gallery img {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -webkit-column-gap:   10px;
+    -moz-column-count:    1;
+    -moz-column-gap:      10px;
+    column-count:         1;
+    column-gap:           10px;
+    float: auto;
+  }
+}
 
 

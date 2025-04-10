@@ -38,3 +38,16 @@
 }
 
 /* --------------------------------------------------- */
+
+/* for mobile */
+@media (max-width: 400px) {
+  .buttons {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  .navbar a.navbar {
+    float: none;
+    width: 100%;
+  }
+}
