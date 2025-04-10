@@ -96,10 +96,24 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
  text-align: center;
  display: block;
 }
+.gallery video {
+  /* Just in case there are inline attributes */
+  width: auto;
+  max-width: 230px;
+  overflow: clip;
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+  text-align: center;
+  display: block;
+ }
 
 /* for mobile */
 @media (max-width: 400px) {
   .gallery img {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  .gallery video {
     display: block;
     float: none;
     width: 100%;
