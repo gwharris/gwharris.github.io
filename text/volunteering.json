@@ -1,0 +1,26 @@
+{
+  "volunteering": [
+    {
+      "title": "Puppy Raiser",
+      "organization": "The Seeing Eye",
+      "organizationUrl": "https://www.seeingeye.org/",
+      "location": "Morristown, NJ",
+      "dates": "May 2016 - Aug. 2023",
+      "details": [
+        "Raised and socialized Seeing Eye dogs for 12+ months per dog.",
+        "Supported the training pipeline to match dogs with blind recipients."
+      ]
+    },
+    {
+      "title": "Volunteer",
+      "organization": "Microsoft TEALS",
+      "organizationUrl": "https://www.microsoft.com/en-us/teals",
+      "location": "New York, NY",
+      "dates": "Jun. 2021 - May 2022",
+      "details": [
+        "Supported AP Computer Science Principles in NYC high schools.",
+        "Promoted equitable CS education through hands-on guidance."
+      ]
+    }
+  ]
+}

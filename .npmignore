@@ -1,9 +1,7 @@
-.DS_Store
-samples
-tests
-text
-.htaccess
-.git
-
 # Tests
 indexTest.html
+
+# Sys files
+desktop.ini
+.DS_Store
+.htaccess

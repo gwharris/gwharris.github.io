@@ -1,10 +1,10 @@
-.DS_Store
-samples
+# Hidden files
 tests
-text
-.htaccess
 
 # Tests
 indexTest.html
 
+# Sys files
 desktop.ini
+.DS_Store
+.htaccess

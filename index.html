@@ -1,21 +1,11 @@
 <!DOCTYPE html>
-
 <!-- Graham Harris  -->
-
 <html lang="en">
+
 <head>
 
-  <!-- FONTS   
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Quicksand&family=Roboto+Mono:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Ubuntu:wght@300&display=swap');  
-    /* font-family: 'Inter', sans-serif;
-      font-family: 'Quicksand', sans-serif;
-      font-family: 'Roboto', sans-serif;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-family: 'Ubuntu', sans-serif; */
-  </style>
-  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'> <!-- font-family: 'Inconsolata'; -->
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'> 
+  <!-- font-family: 'Inconsolata'; -->
 
   <!-- Favicon -->
   <link rel="icon" href="img/favicon2.ico">
@@ -50,250 +40,182 @@
 <body>
 
   <!-- Navbar selections -->
-  <section id="header" class="buttons">
-    <button onclick="press(0)">About Me</button>
-    <button onclick="press(1)">Projects</button>
-    <button onclick="press(2)">Hobbies</button>
-  </section>
+  <nav id="header" class="buttons" aria-label="Main navigation">
+    <button onclick="press(0)" aria-label="About Me">About Me</button>
+    <button onclick="press(1)" aria-label="Projects">Projects</button>
+    <button onclick="press(2)" aria-label="Hobbies">Hobbies</button>
+  </nav>
 
   <br>
 
-  <section id="main" class="main">
+  <main id="main" class="main">
 
-    <!-- Main -->
-    <section id="about" style="display: block; margin-right: 10%;">
+    <!-- Resume -->
+    <section id="about" style="display: block;">
 
       <!-- Welcome header -->
-      <div style="width: 95%; float:left; padding-left: 10px;  padding-top: 2vw">
-        <h1>Welcome!</h1>
-        <div style="width: 60%; float:left; padding-left: 10px; padding-top: 1vw;">
-          <p>My name's <b style="color: #698B69">Graham Harris</b>. I'm an entry-level/intermediate tech professional in NYC. 
-          In my spare time, I'm a hobby ceramic artist, intermediate potter, video game enthusiast, and amateur chef.
-          </p>
-          <p>My work experience is defined by my passion for technical management and business processes. At Capgemini, I led initiatives to break down quarterly objectives, produce actionable documentation, and drive cross-functional collaboration across 5 projects in various industries. I take pride in working with teams, both small and large, to produce results and build relationships.
-
-          In college, I worked in the startup atmosphere at NYU for three years. I developed a behavioral network for the Entrepreneurial Institute that mapped their target audience’s interactions. This capstone project led to insights into their user behavior, improving engagement and marketing focus through data visualization. 
-          </p>
+      <section id="about" style="width: 95%; float:left; padding-left: 10px;  padding-top: 2vw">
+        <header>
+          <h1>Welcome!</h1>
+        </header>
+        <div class="about-content">
+          <div class="bio-text" style="width: 60%; float:left; padding-left: 10px; padding-top: 1vw;">
+            <p>My name's <b style="color: #698B69">Graham Harris</b>. I'm an entry-level/intermediate tech professional in NYC. 
+              In my spare time, I'm a hobby ceramic artist, intermediate potter, video game enthusiast, and amateur chef.
+            </p>
+            <p>My work experience is defined by my passion for technical management and business processes. At Capgemini, I led initiatives to break down quarterly objectives, produce actionable documentation, and drive cross-functional collaboration across 5 projects in various industries.</p>
+            <p>In college, I worked in the startup atmosphere at NYU for three years. I developed a behavioral network for the Entrepreneurial Institute that mapped their target audience’s interactions. This capstone project led to insights into their user behavior, improving engagement and marketing focus. </p>
+          </div>
+          <!-- Headshot -->
+          <div style="width: auto; float:right; height: auto;">
+            <img src="img/me5.jpg" style="height: 25vw; max-height: 350px; display: 
+            block; margin-left: auto; margin-right: auto; 
+            border-radius: 200px;  padding-bottom: 2vw;">
+          </div>
         </div>
-
-        <!-- Headshot -->
-        <div style="width: auto; float:right; height: auto;">
-          <img src="img/me5.jpg" style="height: 25vw; max-height: 350px; display: 
-          block; margin-left: auto; margin-right: auto; 
-          border-radius: 200px;  padding-bottom: 2vw;">
-        </div>
-
-        <br>
       
-        <br><hr><br>
+        <hr><br>
+      </section>
 
-        <!-- Resume Start -->
-        <div>
-          <p style="margin: 0%;"> ** PDF version available <a href="resumes/Graham_Harris_Resume.pdf" target="_blank">here</a>.</p>
-          <h1><b><u>Resume</u></b></h1>
+      <!-- Resume Start -->
+      <div>
+        <p style="margin: 0%;"> ** PDF version available <a href="resumes/Graham_Harris_Resume.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        <h1><b><u>Resume</u></b></h1>
 
-          <p><b>Professional Summary</b>: Analytical and driven Business Analyst with 3+ years of experience in cloud applications, enterprise platform integrations, and sales optimization. Demonstrated record of documenting business requirements, leading Agile processes, and managing cross-functional projects to drive efficiency. Skilled in both data analysis and stakeholder communication, with a strong foundation in data visualization. Passionate about using technology to streamline business operations and enhance decision-making.
-          </p>
-        </div>
-
-        <!-- Work Exp -->
-        <div>
-          <h1 style="font-size: 160%;"><b><u>Work Experience</u></b></h1>
-
-          <h3>Cloud & Custom Applications Consultant, Capgemini US, <i>New York NY</i> <span>June 2022 - Apr. 2025</span></h3>
-          <ul>
-            <li>Documented 50+ business requirements at a leading food products company, supporting the B2B sales team with enterprise cloud platform selection.</li>
-            <li>Managed integrations for a global healthcare firm, collaborating with 4+ internal teams to streamline data exchange between 3 patient databases.</li>
-            <li>Designed 2 methods to collect EDI partner migration parameters across 120 different message types for a healthcare client, ensuring future maintainability.</li>
-            <li>Created 2 customer onboarding frameworks to simplify the partner onboarding process for 1,000+ global customers for a healthcare client.</li>
-            <li>Led 10+ Agile ceremonies as a junior Scrum Master for a major product distributor, facilitating planning, standups, and retrospectives for 2 teams of 10 developers.</li>
-          </ul>
-        
-          <br>
-
-          <h3>Data Analyst Intern, <a href="https://entrepreneur.nyu.edu/" target="_blank">NYU Entrepreneurial Institute</a>, <i>New York NY</i> <span>Sept. 2019 - May 2022</span></h3>
-          <ul>
-            <li>Analyzed data for 50+ Institute events over 5 years by creating a behavioral network, successfully identifying key drivers of engagement and areas of improvement.</li>
-            <li>Organized 6 entrepreneurship events, facilitating networking and growth opportunities for 20+ startups, including incubators and venture capital pitch fests.</li>
-          </ul>
-        </div>
-
-        <br>
-
-        <!-- Education -->
-        <div>
-          <h1 style="font-size: 160%;"><b><u>Education</u></b></h1>
-          <h3>New York University, <i>New York, NY</i> 
-          <span>Aug. 2018 - May 2022</span> </h3>
-          <p><b>Major:</b> Computer Science</p>
-          <p><b>Minors:</b> Mathematics, Italian Studies</p>
-          <p>Academic Memberships: Tech@NYU, NYU Entrepreneurs Network, Bite Club at NYU</p>
-        </div>
-
-        <br><hr><br>
-
-        <h1>Contact:</h1>
-        <p>929.244.0668</p>
-        <p>grahamh1019@gmail.com</p>
-        <p><a href="https://github.com/gwharris" target="_blank">GitHub</a></p>
-        <p><a href="https://www.linkedin.com/in/graham-harris1/" target="_blank">LinkedIn</a></p>
-        <p>Brooklyn, NY</p>
-        <p style="padding-bottom: 20px;">Page last updated May 29th 2025.</p>
+        <p><strong>Professional Summary</strong>: Analytical and driven Business Analyst with 3+ years of experience in cloud applications, enterprise platform integrations, and sales optimization. Demonstrated record of documenting business requirements, leading Agile processes, and managing cross-functional projects to drive efficiency. Skilled in both data analysis and stakeholder communication, with a strong foundation in data visualization. Passionate about using technology to streamline business operations and enhance decision-making.
+        </p>
       </div>
+
+      <!-- Work Exp -->
+      <div>
+        <h1 style="font-size: 160%;"><b><u>Work Experience</u></b></h1>
+        <!-- Work experience is imported by script -->
+        <div id="experienceContainer">Loading experience...</div>
+      </div>
+
+      <br>
+
+      <!-- Education -->
+      <section>
+        <h1 style="font-size: 160%;"><b><u>Education</u></b></h1>
+        <!-- Education is imported by script -->
+        <div id="educationContainer">Loading education...</div>
+      </section>
 
     </section>
 
     <!-- Projects -->
-    <section id="project" style="display: none; margin-right: 10%;">
+    <section id="project" style="display: none;">
       <p style="margin: 0%;"> ** All code is available on <a href="https://github.com/gwharris" target="_blank">GitHub</a>!</p>
-
       <h1><b>Projects:</b></h1>
-
-      <h3><b>Network Analysis Project (<a href="https://github.com/gwharris/NYU_network_analysis" target="_blank">Code</a>)</b></h3>
-        <ul>
-          <li>Created a behavioral network from event data for NYU’s Entrepreneurial Institute.</li>
-          <li>Developed adjacency data and network visualization to demonstrate trends in the data.</li>
-        </ul>
-        <p>Example graph:</p>
-        <img src="img/network_sample.png" style="height: 500px; display: block; margin-left: auto; margin-right: auto;">
-
-      <br>
-
-      <h3><b>Movie Review Sentiment Analysis (<a href="https://github.com/gwharris/MovieSentimentAnalysis" target="_blank">Code</a>)</b></h3>
-        <ul>
-          <li>Calculated binary classification and logistic regression to determine sentiment for 50,000 IMDb movie reviews.</li>
-          <li>Used machine learning tools such as SciKit Learn, Jupyter Notebook, and NLTK to parse reviews and perform analysis.</li>
-        </ul>
-        <p><a href="samples/graham_harris_research_paper.pdf" target="_blank"><i>Final paper located here.</i></a></p>
-        <img src="img/tfidf.png" style="height: 150px; display: block; margin-left: auto; margin-right: auto;">
-
-      <br>
-
-      <h3><b>Daily Tarot Bot (not currently operational)</b></h3>
-        <ul>
-          <li>Created a Twitter bot that tweets a tarot card once a day with meaningful advice.</li>
-          <li>Learned the Tweepy library, project scheduling, API handling, version control, and GitHub Actions flows.</li>
-        </ul>
-        <img src="img/tarot.jpeg" style="height: 150px; display: block; margin-left: auto; margin-right: auto;">
-
-      <br>
-
-      <h3><b>“Unafraid” Game (Last updated 2020) (<a href="https://gwharris2.github.io/" target="_blank">Site</a>)</b></h3>
-        <ul>
-          <li>Developed and scripted a “choose your own adventure” text game</li>
-          <li>Learned HTML, CSS, JavaScript, and GitHub Web Hosting services from scratch.</li>
-        </ul>
-
-      <br><hr><br>
-
-      <h1>Contact:</h1>
-      <p>929.244.0668</p>
-      <p>grahamh1019@gmail.com</p>
-      <p><a href="https://github.com/gwharris" target="_blank">GitHub</a></p>
-      <p><a href="https://www.linkedin.com/in/graham-harris1/" target="_blank">LinkedIn</a></p>
-      <p>Brooklyn, NY</p>
-
+      <!-- Projects is imported by script -->
+      <div id="projectsContainer">Loading projects...</div>
     </section>
 
     <!-- Hobbies (was Volunteer before) -->
-    <section id="volunteer" style="display: none; margin-right: 10%;">
+    <section id="volunteer" style="display: none;">
 
-      <h1><b>Ceramic Art</b></h1>
+      <section>
+        <h2>Ceramic Art</h2>
+        <p>See more on <a href="https://www.instagram.com/gh.ceramic" target="_blank" rel="noopener noreferrer">@gh.ceramic</a></p>
 
-      <h3>More photos on Instagram @gh.ceramic</h3>
-
-      <div class="gallery">
-        <figure>
-          <img src="pottery/pot1.jpg">
-        </figure>
-        <figure>
-          <video src="video/vid1.mov" muted controls loop preload="auto"></video>
-        </figure>
-        <figure>
-          <img src="pottery/pot2.jpg">
-        </figure>
-        <figure>
-          <img src="pottery/pot9.jpg">
-        </figure>
-        <figure>
-          <video src="video/vid2.mov" muted controls loop preload="auto"></video>
-        </figure>
-        <figure>
-          <img src="pottery/pot4.jpg">
-        </figure>
-        <figure>
-          <img src="pottery/pot5.jpg">
-        </figure>
-        <figure>
-          <img src="pottery/pot8.jpg">
-        </figure>
-        <figure>
-          <img src="pottery/pot7.jpg">
-        </figure>
-        <figure>
-          <video src="video/vid3.mov" muted controls loop preload="auto"></video>
-        </figure>
-        <figure>
-          <img src="pottery/pot6.jpg">
-        </figure>
-        <figure>
-          <img src="pottery/pot3.jpg">
-        </figure>
-        <figure>
-          <img src="pottery/pot10.jpg">
-        </figure>
-      </div>
-
+        <details open>
+          <summary style="color: #698B69">Open/Close gallery ></summary>
+          <div class="gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+            <figure>
+              <img src="pottery/pot1.jpg" alt="Ceramic pot 1" loading="lazy">
+            </figure>
+            <figure>
+              <video src="video/vid1.mov" muted controls loop preload="auto"></video>
+            </figure>
+            <figure>
+              <img src="pottery/pot2.jpg" alt="Ceramic pot 2" loading="lazy">
+            </figure>
+            <figure>
+              <img src="pottery/pot9.jpg" alt="Ceramic pot 9" loading="lazy">
+            </figure>
+            <figure>
+              <video src="video/vid2.mov" muted controls loop preload="auto"></video>
+            </figure>
+            <figure>
+              <img src="pottery/pot4.jpg" alt="Ceramic pot 4" loading="lazy">
+            </figure>
+            <figure>
+              <img src="pottery/pot5.jpg" alt="Ceramic pot 5" loading="lazy">
+            </figure>
+            <figure>
+              <img src="pottery/pot8.jpg" alt="Ceramic pot 8" loading="lazy">
+            </figure>
+            <figure>
+              <img src="pottery/pot7.jpg" alt="Ceramic pot 7" loading="lazy">
+            </figure>
+            <figure>
+              <video src="video/vid3.mov" muted controls loop preload="auto"></video>
+            </figure>
+            <figure>
+              <img src="pottery/pot6.jpg" alt="Ceramic pot 6" loading="lazy">
+            </figure>
+            <figure>
+              <img src="pottery/pot3.jpg" alt="Ceramic pot 3" loading="lazy">
+            </figure>
+            <figure>
+              <img src="pottery/pot10.jpg" alt="Ceramic pot 10" loading="lazy">
+            </figure>
+          </div>
+        </details>
+      </section>
+      
       <br><hr><br>
 
-      <h1><b>Volunteering & College Extracurriculars</b></h1>
+      <!-- Volunteering Section -->
+      <section>
+        <h2><u>Volunteering</u></h2>
+        <div id="volunteerContainer"></div>
+      </section>
 
-      <h3>Puppy Raiser at <a href="https://www.seeingeye.org/" target="_blank">The Seeing Eye</a>, <i>Morristown NJ</i>  <span>May 2016 - Aug. 2023</span>
-      </h3>
+      <hr>
 
-      <p>The Seeing Eye's mission is to enhance the independence, dignity and self-confidence of people who are blind, through the use of specially trained dogs.</p>
+      <!-- Extracurriculars Section -->
+      <section>
+        <h2><u>College Extracurriculars</u></h2>
+        <div id="extracurricularContainer"></div>
+      </section>
 
-      <p>Families who raise Seeing Eye dogs housebreak, socialize, and train the dogs for anywhere between a year to a year-and-a-half. The dogs are then formally trained at a professional facility in Morristown NJ and matched with a recipient.</p>
+    </section>
 
-      <br>
-
-      <h3><a target="_blank" href="https://www.microsoft.com/en-us/teals">Microsoft TEALS</a> Volunteer, <i>New York NY</i> 
-        <span>Jun. 2021 - May 2022</span>
-      </h3>
-      <p>Provided high school students in AP Computer Science Principles with equitable access to computer science education. Microsoft's TEALS program is a philanthropic effort to give back to communities that may not have access to traditional Computer Science education.</p>
-
-      <br>
-
-      <h3><a href="https://www.biteclubnyu.com" target="_blank">Bite Club at NYU</a> Member <span>Aug. 2018 - May 2022</span><br>
-      Website Manager <span>Apr. 2019 - May 2022</span><br>
-      General Manager <span>Apr. 2020 - May 2022</span></h3>
-        
-      <br>
-
-      <h3>"Clicks, Likes, and Tweets: Behavioral Addiction in the Digital Space" Class Volunteer
-        <span>Jan. 2021 - May 2021</span>
-      </h3>
-      <p>Reported directly under Dr. Argelinda Baroni of NYU Langone, gathering materials for Spring 2021 semester. Materials included academic research, practical examples, articles, and papers, with a specific focus on video game examples relating to behavioral addiction.</p>
-
-      <br>
-
+    <section id="contact">
       <br><hr><br>
-
       <h1>Contact:</h1>
       <p>929.244.0668</p>
       <p>grahamh1019@gmail.com</p>
       <p><a href="https://github.com/gwharris" target="_blank">GitHub</a></p>
       <p><a href="https://www.linkedin.com/in/graham-harris1/" target="_blank">LinkedIn</a></p>
       <p>Brooklyn, NY</p>
-
+      <p>Last updated: May 31, 2025</p>
     </section>
 
-  </section>
+  </main>
 
 </body>
 
   <!-- Scripts -->
   <script type="text/javascript" src="scripts/buttons.js"></script>
+  <script type="text/javascript" src="scripts/loadJsonSection.js"></script>
+  <!-- Function calls that load text -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadJsonSection('text/workExperience.json', 'experienceContainer');
+      loadJsonSection('text/education.json', 'educationContainer');
+      loadJsonSection('text/projects.json', 'projectsContainer');
+      loadJsonSection('text/volunteering.json', 'volunteerContainer');
+      loadJsonSection('text/extracurriculars.json', 'extracurricularContainer');
+    });
+  </script>
+  <!-- Font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300');  
+    /* font-family: 'Roboto', sans-serif; */
+  </style>
 
 </html>
 

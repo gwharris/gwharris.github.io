@@ -1,0 +1,29 @@
+{
+  "experiences": [
+    {
+      "title": "Cloud & Custom Applications Consultant",
+      "company": "Capgemini US",
+      "companyUrl": "",
+      "location": "New York NY",
+      "dates": "June 2022 - Apr. 2025",
+      "details": [
+        "Documented 50+ business requirements at a leading food products company, supporting the B2B sales team with enterprise cloud platform selection.",
+        "Managed integrations for a global healthcare firm, collaborating with 4+ internal teams to streamline data exchange between 3 patient databases.",
+        "Designed 2 methods to collect EDI partner migration parameters across 120 different message types for a healthcare client, ensuring future maintainability.",
+        "Created 2 customer onboarding frameworks to simplify the partner onboarding process for 1,000+ global customers for a healthcare client.",
+        "Led 10+ Agile ceremonies as a junior Scrum Master for a major product distributor, facilitating planning, standups, and retrospectives for 2 teams of 10 developers."
+      ]
+    },
+    {
+      "title": "Data Analyst Intern",
+      "company": "NYU Entrepreneurial Institute",
+      "companyUrl": "https://entrepreneur.nyu.edu/",
+      "location": "New York NY",
+      "dates": "Sept. 2019 - May 2022",
+      "details": [
+        "Analyzed data for 50+ Institute events over 5 years by creating a behavioral network, successfully identifying key drivers of engagement and areas of improvement.",
+        "Organized 6 entrepreneurship events, facilitating networking and growth opportunities for 20+ startups, including incubators and venture capital pitch fests."
+      ]
+    }
+  ]
+}

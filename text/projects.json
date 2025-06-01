@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "title": "Network Analysis Project",
+      "repo": "https://github.com/gwharris/NYU_network_analysis",
+      "image": "img/network_sample.png",
+      "details": [
+        "Created a behavioral network from event data for NYU’s Entrepreneurial Institute.",
+        "Used data visualization to highlight engagement patterns."
+      ]
+    },
+    {
+      "title": "Movie Review Sentiment Analysis",
+      "repo": "https://github.com/gwharris/MovieSentimentAnalysis",
+      "paper": "samples/graham_harris_research_paper.pdf",
+      "image": "img/tfidf.png",
+      "details": [
+        "Performed logistic regression on 50,000 IMDb reviews.",
+        "Used Scikit-Learn, NLTK, and Jupyter for ML analysis."
+      ]
+    },
+    {
+      "title": "Daily Tarot Bot",
+      "image": "img/tarot.jpeg",
+      "details": [
+        "Built a Twitter bot to post daily Tarot readings.",
+        "Used Tweepy and GitHub Actions."
+      ]
+    }
+  ]
+}

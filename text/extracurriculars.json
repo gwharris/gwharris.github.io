@@ -1,0 +1,24 @@
+{
+  "extracurriculars": [
+    {
+      "title": "Class Volunteer – 'Clicks, Likes, and Tweets'",
+      "organization": "NYU Langone / Dr. Argelinda Baroni",
+      "dates": "Jan. 2021 – May 2021",
+      "details": [
+        "Collected academic materials and examples related to behavioral addiction.",
+        "Researched video game patterns and social media influence on students."
+      ]
+    },
+    {
+      "title": "Website Manager",
+      "organization": "Bite Club at NYU",
+      "organizationUrl": "https://www.biteclubnyu.com",
+      "dates": "Aug. 2018 – May 2022",
+      "details": [
+        "Joined Bite Club as a food and tech enthusiast.",
+        "Managed the website from 2019 to 2022.",
+        "Led club logistics and programming as General Manager for 2 years."
+      ]
+    }
+  ]
+}
