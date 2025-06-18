@@ -15,7 +15,7 @@ function loadJsonSection(jsonFilePath, targetId) {
       items.forEach(item => {
         if (key === 'projects') {
           const title = item.repo
-            ? `<h3><b>${item.title} (<a href="${item.repo}" target="_blank" rel="noopener noreferrer">Code</a>)</b></h3>`
+            ? `<h3><b>${item.title} (<a href="${item.repo}" target="_blank" rel="noopener noreferrer">Website</a>)</b></h3>`
             : `<h3><b>${item.title}</b></h3>`;
 
           const paper = item.paper
