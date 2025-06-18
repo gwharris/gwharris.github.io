@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "title": "Job Application Data Visualization",
+      "repo": "https://gh-application-tracker.streamlit.app/",
+      "image": "img/job_tracker.png",
+      "details": [
+        "Deployed an interactive Streamlit application to analyze over 200 job applications, visualize industry trends, and calculate return-on-effort during a period of unemployment.",
+        "Calculated a 'return on effort' metric to optimize application effectiveness and showcase analysis skills."
+      ]
+    },
+    {
       "title": "Network Analysis Project",
       "repo": "https://github.com/gwharris/NYU_network_analysis",
       "image": "img/network_sample.png",
